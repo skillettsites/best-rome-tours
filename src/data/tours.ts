@@ -70,7 +70,7 @@ export const tours: Tour[] = [
   {
     slug: 'rome-colosseum-arena-floor-palatine-and-forum-guided-tour',
     title: 'Rome: Colosseum Arena Floor, Palatine & Forum Guided Tour',
-    shortTitle: 'Rome',
+    shortTitle: 'Colosseum Arena Floor, Palatine & Forum Guided Tour',
     metaTitle: 'Rome Tickets 2026',
     metaDescription: 'Book Rome: Colosseum Arena Floor, Palatine & Forum Guided Tour in Rome. Instant confirmation, free cancellation on most options. Rated 4.5★ by 25,767…',
     description: 'Experience special access to the Colosseum, Roman Forum, and Palatine Hill on a guided tour. Follow in the footsteps of gladiators & emperors as you…',
@@ -103,7 +103,7 @@ export const tours: Tour[] = [
   {
     slug: 'rome-vatican-museums-sistine-chapel-and-basilica-tour',
     title: 'Rome: Vatican Museums, Sistine Chapel & Basilica Tour',
-    shortTitle: 'Rome',
+    shortTitle: 'Vatican Museums, Sistine Chapel & Basilica Tour',
     metaTitle: 'Rome Tickets 2026',
     metaDescription: 'Book Rome: Vatican Museums, Sistine Chapel & Basilica Tour in Rome. Instant confirmation, free cancellation on most options. Rated 4.7★ by 16,540…',
     description: 'Experience the Vatican Museums & Sistine Chapel with skip-the-line entry, expert guide, and curated route. Upgrade to include St. Peter’s Basilica and add…',
@@ -136,7 +136,7 @@ export const tours: Tour[] = [
   {
     slug: 'rome-colosseum-forum-palatine-hill-entry-and-audio-guide',
     title: 'Rome: Colosseum, Forum, Palatine Hill Entry, and Audio Guide',
-    shortTitle: 'Rome',
+    shortTitle: 'Colosseum, Forum, Palatine Hill Entry, and Audio',
     metaTitle: 'Rome Tickets 2026',
     metaDescription: 'Book Rome: Colosseum, Forum, Palatine Hill Entry, and Audio Guide in Rome. Instant confirmation, free cancellation on most options. Rated 4.3★ by 3,029…',
     description: 'Discover ancient Rome at the Colosseum, Arena floor, Forum, and Palatine Hill. Use the audio guide to enhance your visit and explore the history of these…',
@@ -169,7 +169,7 @@ export const tours: Tour[] = [
   {
     slug: 'vatican-museums-and-sistine-chapel-entrance-ticket',
     title: 'Vatican: Museums & Sistine Chapel Entrance Ticket',
-    shortTitle: 'Vatican',
+    shortTitle: 'Museums & Sistine Chapel Entrance Ticket',
     metaTitle: 'Vatican Tickets 2026',
     metaDescription: 'Book Vatican: Museums & Sistine Chapel Entrance Ticket in Rome. Instant confirmation, free cancellation on most options. Rated 4.5★ by 152,180 travellers.',
     description: 'See priceless works of art from the Papal collections in the Vatican Museums and Sistine Chapel. Marvel at masterpieces from antiquity to Michelangelo’s…',
@@ -202,7 +202,7 @@ export const tours: Tour[] = [
   {
     slug: 'vatican-st-peters-basilica-dome-climb-and-papal-tombs-tour',
     title: 'Vatican: St.Peter\'s Basilica,Dome Climb & Papal Tombs Tour',
-    shortTitle: 'Vatican',
+    shortTitle: 'St.Peter\'s Basilica,Dome Climb & Papal Tombs Tour',
     metaTitle: 'Vatican Tickets 2026',
     metaDescription: 'Book Vatican: St.Peter\'s Basilica,Dome Climb & Papal Tombs Tour in Rome. Instant confirmation, free cancellation on most options. Rated 4.5★ by 3,220…',
     description: 'Explore St. Peter’s Basilica on a guided tour. Admire Michelangelo’s *Pietà* and visit the Vatican Grottoes and the Tombs of St. Peter.',
@@ -235,7 +235,7 @@ export const tours: Tour[] = [
   {
     slug: 'vatican-sistine-chapel-and-st-peters-skip-the-line-tour',
     title: 'Vatican, Sistine Chapel & St. Peter\'s Skip-the-Line Tour',
-    shortTitle: 'Vatican',
+    shortTitle: 'Vatican, Sistine Chapel & St. Peter\'s Skip-the-Line',
     metaTitle: 'Vatican Tickets 2026',
     metaDescription: 'Book Vatican, Sistine Chapel & St. Peter\'s Skip-the-Line Tour in Rome. Instant confirmation, free cancellation on most options. Rated 4.6★ by 10,204…',
     description: 'Skip the line of the Vatican Museums, Sistine Chapel, and St. Peter\'s Basilica on a guided tour.',
@@ -268,7 +268,7 @@ export const tours: Tour[] = [
   {
     slug: 'rome-colosseum-with-arena-floor-tours-and-ticket-options',
     title: 'Rome: Colosseum with Arena Floor - Tours & Ticket Options',
-    shortTitle: 'Rome',
+    shortTitle: 'Colosseum with Arena Floor - Tours & Ticket Options',
     metaTitle: 'Rome Tickets 2026',
     metaDescription: 'Book Rome: Colosseum with Arena Floor - Tours & Ticket Options in Rome. Instant confirmation, free cancellation on most options. Rated 4.2★ by 628…',
     description: 'Enjoy a VIP guided tour of the Colosseum Arena in a small group of max 10, followed by self-guided access to the Roman Forum & Palatine Hill.',
@@ -466,7 +466,7 @@ export const tours: Tour[] = [
   {
     slug: 'rome-st-peters-basilica-dome-climb-and-underground-tour',
     title: 'Rome: St. Peter\'s Basilica, Dome Climb, and Underground Tour',
-    shortTitle: 'Rome',
+    shortTitle: 'St. Peter\'s Basilica, Dome Climb, and Underground',
     metaTitle: 'Rome Tickets 2026',
     metaDescription: 'Book Rome: St. Peter\'s Basilica, Dome Climb, and Underground Tour in Rome. Instant confirmation, free cancellation on most options. Rated 4.7★ by 5,369…',
     description: 'Discover the St. Peter’s Basilica on a guided walking tour. Visit the Dome and soak up panoramic views of Rome, then go underground to admire the historic…',
@@ -499,7 +499,7 @@ export const tours: Tour[] = [
   {
     slug: 'rome-colosseum-and-forum-with-audio-guide-app-optional-arena',
     title: 'Rome: Colosseum & Forum with Audio Guide App -Optional Arena',
-    shortTitle: 'Rome',
+    shortTitle: 'Colosseum & Forum with Audio Guide App -Optional',
     metaTitle: 'Rome Tickets 2026',
     metaDescription: 'Book Rome: Colosseum & Forum with Audio Guide App -Optional Arena in Rome. Instant confirmation, free cancellation on most options. Rated 4.2★ by 29,000…',
     description: 'Immerse yourself in the world of ancient Rome with admission to the Colosseum, Forum, and Palatine Hill. Breeze past the ticket office lines, and enhance…',
@@ -664,7 +664,7 @@ export const tours: Tour[] = [
   {
     slug: 'rome-fiat-500-convertible-tour-with-photos',
     title: 'Rome: Fiat 500 Convertible Tour with Photos',
-    shortTitle: 'Rome',
+    shortTitle: 'Fiat 500 Convertible Tour with Photos',
     metaTitle: 'Rome Tickets 2026',
     metaDescription: 'Book Rome: Fiat 500 Convertible Tour with Photos in Rome. Instant confirmation, free cancellation on most options. Rated 5★ by 320 travellers.',
     description: 'Explore Rome in a vintage Fiat 500 convertible. Visit the Colosseum, and more. Enjoy a scenic drive and get 20 professional photos to remember your…',
@@ -730,7 +730,7 @@ export const tours: Tour[] = [
   {
     slug: 'rome-castel-santangelo-entry-ticket-and-digital-audioguide',
     title: 'Rome: Castel Sant\'Angelo Entry Ticket & Digital Audioguide',
-    shortTitle: 'Rome',
+    shortTitle: 'Castel Sant\'Angelo Entry Ticket & Digital Audioguide',
     metaTitle: 'Rome Tickets 2026',
     metaDescription: 'Book Rome: Castel Sant\'Angelo Entry Ticket & Digital Audioguide in Rome. Instant confirmation, free cancellation on most options. Rated 4.6★ by 7,897…',
     description: 'Save time on your trip to Rome with this entry ticket to Castel Sant\'Angelo, the Mausoleum of Hadrian. Enjoy city views from the rooftop with our digital…',
@@ -763,7 +763,7 @@ export const tours: Tour[] = [
   {
     slug: 'rome-city-sightseeing-hop-on-hop-off-bus-with-audioguide',
     title: 'Rome: City Sightseeing Hop-on Hop-off Bus with Audioguide',
-    shortTitle: 'Rome',
+    shortTitle: 'City Sightseeing Hop-on Hop-off Bus with Audioguide',
     metaTitle: 'Rome Tickets 2026',
     metaDescription: 'Book Rome: City Sightseeing Hop-on Hop-off Bus with Audioguide in Rome. Instant confirmation, free cancellation on most options. Rated 3.9★ by 17,748…',
     description: 'Explore Rome in an open-top, double-decker bus. Visit top sights like the Vatican, Spanish Steps, Colosseum, and more. Enjoy the Yellow Line, exclusively…',
@@ -796,7 +796,7 @@ export const tours: Tour[] = [
   {
     slug: 'rome-big-bus-hop-on-hop-off-open-top-sightseeing-tour',
     title: 'Rome: Big Bus Hop-on, Hop-off Open-Top Sightseeing Tour',
-    shortTitle: 'Rome',
+    shortTitle: 'Big Bus Hop-on, Hop-off Open-Top Sightseeing Tour',
     metaTitle: 'Rome Tickets 2026',
     metaDescription: 'Book Rome: Big Bus Hop-on, Hop-off Open-Top Sightseeing Tour in Rome. Instant confirmation, free cancellation on most options. Rated 4.1★ by 11,497…',
     description: 'Explore Rome’s iconic sights with an open-top bus tour. Enjoy views of the Vatican, Colosseum, and Piazza Venezia. Choose a half-day ticket or opt for a…',
@@ -829,7 +829,7 @@ export const tours: Tour[] = [
   {
     slug: 'rome-pasta-and-tiramisu-class-with-fine-wine-by-the-vatican',
     title: 'Rome: Pasta & Tiramisu Class with Fine Wine by the Vatican',
-    shortTitle: 'Rome',
+    shortTitle: 'Pasta & Tiramisu Class with Fine Wine by the Vatican',
     metaTitle: 'Rome Tickets 2026',
     metaDescription: 'Book Rome: Pasta & Tiramisu Class with Fine Wine by the Vatican in Rome. Instant confirmation, free cancellation on most options. Rated 4.9★ by 6,906…',
     description: 'Discover the secrets to making authentic homemade pasta and tiramisu from a local chef. The cooking class takes place in a locally loved restaurant, in…',

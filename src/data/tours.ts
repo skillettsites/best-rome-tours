@@ -15,7 +15,7 @@ export const tours: Tour[] = [
     rating: 4.8,
     reviewCount: 85952,
     imageAlt: 'Colosseum, Roman Forum & Palatine Hill Guided Tour — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/33cca66c19886c9f.jpeg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/33cca66c19886c9f.jpeg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -48,7 +48,7 @@ export const tours: Tour[] = [
     rating: 4.3,
     reviewCount: 80736,
     imageAlt: 'Vatican Museums, Sistine Chapel & St. Peter\'s Basilica Tour — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/b64379eb32590b6e.jpeg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/b64379eb32590b6e.jpeg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -81,7 +81,7 @@ export const tours: Tour[] = [
     rating: 4.5,
     reviewCount: 25767,
     imageAlt: 'Rome: Colosseum Arena Floor, Palatine & Forum Guided Tour — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/94228a891b57dd5ac3f35040d77c0d5045f72c51aaf096f868ed50367e406c22.jpg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/94228a891b57dd5ac3f35040d77c0d5045f72c51aaf096f868ed50367e406c22.jpg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -114,7 +114,7 @@ export const tours: Tour[] = [
     rating: 4.7,
     reviewCount: 16540,
     imageAlt: 'Rome: Vatican Museums, Sistine Chapel & Basilica Tour — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/a05866aaf07a1c1a7bd66074b53bebd7877ab261eefc1efd7b57e6b6b3c64714.jpg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/a05866aaf07a1c1a7bd66074b53bebd7877ab261eefc1efd7b57e6b6b3c64714.jpg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -147,7 +147,7 @@ export const tours: Tour[] = [
     rating: 4.3,
     reviewCount: 3029,
     imageAlt: 'Rome: Colosseum, Forum, Palatine Hill Entry, and Audio Guide — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/1e7a3bb0a8b0d6aab7a0a1fbdd8a19507261d42230532eac93d6bea6683b1113.jpg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/1e7a3bb0a8b0d6aab7a0a1fbdd8a19507261d42230532eac93d6bea6683b1113.jpg/145.jpg',
     categories: ['skip-the-line'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -180,7 +180,7 @@ export const tours: Tour[] = [
     rating: 4.5,
     reviewCount: 152180,
     imageAlt: 'Vatican: Museums & Sistine Chapel Entrance Ticket — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/5f16d60b18470.jpeg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/5f16d60b18470.jpeg/145.jpg',
     categories: ['skip-the-line'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -213,7 +213,7 @@ export const tours: Tour[] = [
     rating: 4.5,
     reviewCount: 3220,
     imageAlt: 'Vatican: St.Peter\'s Basilica,Dome Climb & Papal Tombs Tour — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/e84cb94e6c32ccf1687112be037c41caf90528945b42767b0e0bd4c1865bf130.jpeg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/e84cb94e6c32ccf1687112be037c41caf90528945b42767b0e0bd4c1865bf130.jpeg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -246,7 +246,7 @@ export const tours: Tour[] = [
     rating: 4.6,
     reviewCount: 10204,
     imageAlt: 'Vatican, Sistine Chapel & St. Peter\'s Skip-the-Line Tour — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/e5199300a9a38b52d01bfe54207a5aa626ba8b7d6aa1b6beeae6c27ef9292d6b.jpg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/e5199300a9a38b52d01bfe54207a5aa626ba8b7d6aa1b6beeae6c27ef9292d6b.jpg/145.jpg',
     categories: ['skip-the-line'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -279,7 +279,7 @@ export const tours: Tour[] = [
     rating: 4.2,
     reviewCount: 628,
     imageAlt: 'Rome: Colosseum with Arena Floor - Tours & Ticket Options — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/9d03aca445e389f509211bddfe46eea87fd58e227da12b89e3f08fce9ce8b774.jpg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/9d03aca445e389f509211bddfe46eea87fd58e227da12b89e3f08fce9ce8b774.jpg/145.jpg',
     categories: ['skip-the-line'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -312,7 +312,7 @@ export const tours: Tour[] = [
     rating: 4.7,
     reviewCount: 2266,
     imageAlt: 'Colosseum Guided Tour with Roman Forum and Palatine Hill — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/be19fdea566b34dbae406a534358288d17dea0570d3a004f4df1ea1f955ee6e6.jpg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/be19fdea566b34dbae406a534358288d17dea0570d3a004f4df1ea1f955ee6e6.jpg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -345,7 +345,7 @@ export const tours: Tour[] = [
     rating: 4.5,
     reviewCount: 1393,
     imageAlt: 'Colosseum Sunset Tour with Entry — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/6385e82c9b8bb1455f2af08c2b66a3caa2e63c56a1d8d72a9a29553a9b455726.jpg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/6385e82c9b8bb1455f2af08c2b66a3caa2e63c56a1d8d72a9a29553a9b455726.jpg/145.jpg',
     categories: ['skip-the-line'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -378,7 +378,7 @@ export const tours: Tour[] = [
     rating: 4.8,
     reviewCount: 466,
     imageAlt: 'Rome VIP Private Golf Cart Experience — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/361f01854fca07b635b74fbc5939df993184b87f96df2e57f44b98f079a5e26b.jpg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/361f01854fca07b635b74fbc5939df993184b87f96df2e57f44b98f079a5e26b.jpg/145.jpg',
     categories: ['top-attractions'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -411,7 +411,7 @@ export const tours: Tour[] = [
     rating: 4.5,
     reviewCount: 1880,
     imageAlt: 'Colosseum Arena, Forum & Hill Tour – Optional Underground — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/dcb1e33abd3faedfd82cd9612dd5c33af4240b2f4988c9aa3d3ea5e5cc676d32.jpg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/dcb1e33abd3faedfd82cd9612dd5c33af4240b2f4988c9aa3d3ea5e5cc676d32.jpg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -444,7 +444,7 @@ export const tours: Tour[] = [
     rating: 4.5,
     reviewCount: 849,
     imageAlt: 'Colosseum by Evening Guided Tour with Optional Arena Access — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/d0c75293956c0a42.jpeg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/d0c75293956c0a42.jpeg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -477,7 +477,7 @@ export const tours: Tour[] = [
     rating: 4.7,
     reviewCount: 5369,
     imageAlt: 'Rome: St. Peter\'s Basilica, Dome Climb, and Underground Tour — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/3593302d0b51c6a3877c1d60b56df9b04c943f9bbfc1d9b2256271331f9b6a09.jpg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/3593302d0b51c6a3877c1d60b56df9b04c943f9bbfc1d9b2256271331f9b6a09.jpg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -510,7 +510,7 @@ export const tours: Tour[] = [
     rating: 4.2,
     reviewCount: 29000,
     imageAlt: 'Rome: Colosseum & Forum with Audio Guide App -Optional Arena — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/376912ad96a4e631a7855a9d0ecc49f47d024090336606266afd00aa30c3b0df.jpeg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/376912ad96a4e631a7855a9d0ecc49f47d024090336606266afd00aa30c3b0df.jpeg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -543,7 +543,7 @@ export const tours: Tour[] = [
     rating: 4.3,
     reviewCount: 1106,
     imageAlt: 'St. Peter’s Basilica Pre-reserved Ticket, Pope Catacombs — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/f074904bada1d6cf347a3942a94e3858af92d1d7145bd4c34da8fc12678c1ca6.jpeg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/f074904bada1d6cf347a3942a94e3858af92d1d7145bd4c34da8fc12678c1ca6.jpeg/145.jpg',
     categories: ['skip-the-line'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -576,7 +576,7 @@ export const tours: Tour[] = [
     rating: 4.6,
     reviewCount: 470,
     imageAlt: 'Vatican Museums & Sistine Chapel Tour + St.Peter\'s Basilica — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/710c639f04878cb8be8caa611e6cfce44bc5635847d7a556f2c2b4c85184fe90.jpg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/710c639f04878cb8be8caa611e6cfce44bc5635847d7a556f2c2b4c85184fe90.jpg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -609,7 +609,7 @@ export const tours: Tour[] = [
     rating: 4.6,
     reviewCount: 10124,
     imageAlt: 'Vatican Museums, Sistine Chapel & St. Peter\'s Basilica Tour — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/09207f6900393d0ef08d54e20d257c958a6eaa16d98ae92b9cec3da36d4690f4.jpg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/09207f6900393d0ef08d54e20d257c958a6eaa16d98ae92b9cec3da36d4690f4.jpg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -642,7 +642,7 @@ export const tours: Tour[] = [
     rating: 4.1,
     reviewCount: 239,
     imageAlt: 'Trevi Fountain + Subterranean Aqueducts Tour — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/439196027748839eb80a330d579eda2b1f515ac99da7c41aecc01129f01f990c.jpeg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/439196027748839eb80a330d579eda2b1f515ac99da7c41aecc01129f01f990c.jpeg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -675,7 +675,7 @@ export const tours: Tour[] = [
     rating: 5,
     reviewCount: 320,
     imageAlt: 'Rome: Fiat 500 Convertible Tour with Photos — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/bd2ff019f6cf96eee0952b4d71d03b3b10a175e07a0f5afa49d7485e1978a3e1.jpg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/bd2ff019f6cf96eee0952b4d71d03b3b10a175e07a0f5afa49d7485e1978a3e1.jpg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -708,7 +708,7 @@ export const tours: Tour[] = [
     rating: 4.4,
     reviewCount: 16291,
     imageAlt: 'Vatican Museums & Sistine Chapel Skip-the-Line Entry Ticket — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/a0844bb98ee4b557996a1e3fac8f9991274236e71fb69e312d3c8b58e5db0f29.jpeg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/a0844bb98ee4b557996a1e3fac8f9991274236e71fb69e312d3c8b58e5db0f29.jpeg/145.jpg',
     categories: ['skip-the-line'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -741,7 +741,7 @@ export const tours: Tour[] = [
     rating: 4.6,
     reviewCount: 7897,
     imageAlt: 'Rome: Castel Sant\'Angelo Entry Ticket & Digital Audioguide — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/d98f4bb598ecc8cd.jpeg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/d98f4bb598ecc8cd.jpeg/145.jpg',
     categories: ['skip-the-line'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -774,7 +774,7 @@ export const tours: Tour[] = [
     rating: 3.9,
     reviewCount: 17748,
     imageAlt: 'Rome: City Sightseeing Hop-on Hop-off Bus with Audioguide — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/64e7f78adcae5a0d1dc694aaeae98d524a36708804f09ff47ed19c7fbe202c3d.jpg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/64e7f78adcae5a0d1dc694aaeae98d524a36708804f09ff47ed19c7fbe202c3d.jpg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -807,7 +807,7 @@ export const tours: Tour[] = [
     rating: 4.1,
     reviewCount: 11497,
     imageAlt: 'Rome: Big Bus Hop-on, Hop-off Open-Top Sightseeing Tour — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/6401f6ad47d64.jpeg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/6401f6ad47d64.jpeg/145.jpg',
     categories: ['guided-tours'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',
@@ -840,7 +840,7 @@ export const tours: Tour[] = [
     rating: 4.9,
     reviewCount: 6906,
     imageAlt: 'Rome: Pasta & Tiramisu Class with Fine Wine by the Vatican — Rome',
-    imageUrl: 'https://cdn.getyourguide.com/img/tour/bff6f7f8ccb8de6bc2bc847725d6e925cabb776a1d3ca7e09f235ec2933574d0.jpeg/53.jpg',
+    imageUrl: 'https://cdn.getyourguide.com/img/tour/bff6f7f8ccb8de6bc2bc847725d6e925cabb776a1d3ca7e09f235ec2933574d0.jpeg/145.jpg',
     categories: ['food-drink'],
     highlights: [
       'Booked through GetYourGuide with instant confirmation',

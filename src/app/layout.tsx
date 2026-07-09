@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { CurrencyProvider } from '@/components/CurrencyProvider';
 import { Inter, Instrument_Serif } from 'next/font/google';
 
 import { Analytics } from '@vercel/analytics/next';
@@ -94,12 +95,14 @@ export default function RootLayout({
         <AffiliateClickTracker />
         <GoogleAnalytics />
         <GYGScript />
-        <MotionConfig>
+        <CurrencyProvider>
+          <MotionConfig>
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
         </MotionConfig>
         <SiteStickyCTA />
+        </CurrencyProvider>
         <Analytics />
       </body>
     </html>

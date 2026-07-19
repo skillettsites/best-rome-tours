@@ -116,6 +116,46 @@ export const guides: Guide[] = [
     publishedDate: '2026-07-09',
     updatedDate: '2026-07-09',
   },
+  {
+    slug: "best-hop-on-hop-off-rome",
+    title: "Best Hop-On Hop-Off Bus Tours in Rome (2026)",
+    metaTitle: "Best Hop-On Hop-Off Rome Bus Tours 2026",
+    metaDescription: "The best hop-on hop-off bus tours in Rome for 2026. Compare routes, prices and passes, and book open-top sightseeing tickets with free cancellation.",
+    excerpt: "Compare the best hop-on hop-off bus tours in Rome, with routes, passes and live prices.",
+    sections: [
+      { heading: "Why a hop-on hop-off bus is the easiest way to see Rome", content: "<p>A hop-on hop-off bus is the simplest way to cover Rome in a single day. One ticket lets you ride an open-top double-decker all day, jump off at the Colosseum, the Roman Forum, the Trevi Fountain, the Pantheon and the Vatican, explore for as long as you like, then catch the next bus. It doubles as sightseeing and transport, so you save on taxis and metro fares while an onboard audio guide tells you the story of each landmark as you pass it. For first-time visitors who want to get their bearings fast, it is hard to beat.</p>" },
+      { heading: "Which Rome bus pass to choose", content: "<p>Most tickets come as a 24 or 48 hour pass. A 24 hour pass suits a short city break where you want to hit the highlights in one go. A 48 hour pass makes sense if you plan to jump off and spend real time at the big sights across two days. Look for tickets with free cancellation and mobile entry so plans stay flexible and there is nothing to print. Buses run frequently in peak season, roughly every 10 to 20 minutes on the main loops.</p><ul><li><strong>Best all-rounder:</strong> the classic open-top sightseeing loop with audio guide.</li><li><strong>Best for flexibility:</strong> a big-bus pass with multiple routes and, in some cities, an optional river or harbour cruise added on.</li><li><strong>Best for small groups who want to skip the crowds:</strong> a private golf cart or small-vehicle tour that reaches the narrow streets a bus cannot.</li></ul>" },
+      { heading: "Book ahead and pair it with a skip-the-line ticket", content: "<p>Bus passes rarely sell out, but booking online is cheaper than buying at the roadside kiosk and locks in free cancellation. The smartest Rome itinerary uses the bus to move between sights and a separate skip-the-line ticket for the one or two attractions with the longest queues, so you are never stuck waiting in the sun. The tours below all link straight to GetYourGuide, where prices and availability are always live.</p>" }
+    ],
+    relatedTourSlugs: ["rome-city-sightseeing-hop-on-hop-off-bus-with-audioguide", "rome-big-bus-hop-on-hop-off-open-top-sightseeing-tour", "rome-vip-private-golf-cart-experience", "colosseum-guided-tour-with-roman-forum-and-palatine-hill", "rome-vatican-museums-sistine-chapel-and-basilica-tour"],
+    faqs: [
+      { question: "How much is a hop-on hop-off bus in Rome?", answer: "A 24 hour Rome pass typically starts from around 20 to 35 pounds depending on the operator and route, with 48 hour passes costing a little more per day. Booking online is usually cheaper than buying at the kiosk and adds free cancellation. Check the live price on the tickets above." },
+      { question: "Is the hop-on hop-off bus worth it in Rome?", answer: "For first-time visitors, yes. It covers the Colosseum, the Roman Forum, the Trevi Fountain, the Pantheon and the Vatican in one loop, saves you money on taxis and public transport, and the audio guide adds context as you go. If you only have a day or two and want to see the highlights without planning routes, it is one of the best value options in the city." },
+      { question: "How often do the buses run?", answer: "On the main loops buses usually come every 10 to 20 minutes in peak season and a little less often in winter. Your ticket is valid all day (or across two days on a 48 hour pass), so you can jump on and off as many times as you like." }
+    ],
+    publishedDate: "2026-07-14",
+    updatedDate: "2026-07-14",
+  },
+  {
+    slug: "best-walking-tours-rome-2026",
+    title: "Best Walking Tours in Rome (2026)",
+    metaTitle: "Best Walking Tours in Rome 2026",
+    metaDescription: "The best guided walking tours in Rome for 2026. Small groups, expert local guides and skip-the-line access to Rome's top sights, with free cancellation.",
+    excerpt: "The best small-group and skip-the-line walking tours in Rome, led by expert local guides.",
+    sections: [
+      { heading: "Why take a guided walking tour in Rome", content: "<p>Rome rewards visitors who explore on foot. A guided walking tour puts a knowledgeable local at your side who brings the history to life, points out the details you would walk straight past, and, on the best tours, gets you skip-the-line access so you spend your time seeing sights rather than queuing. Groups are usually small, which means you can actually hear the guide and ask questions. It is the difference between ticking a landmark off a list and genuinely understanding it.</p>" },
+      { heading: "The tours worth booking", content: "<p>The strongest walking tours in Rome combine an expert guide with priority entry to the headline attractions among the Colosseum, the Roman Forum, the Trevi Fountain, the Pantheon and the Vatican. Look for small-group sizes, clear meeting points, and free cancellation up to 24 hours before. Tickets arrive on your phone, so there is nothing to collect. The experiences below are ranked by verified traveller reviews and link straight to GetYourGuide for live prices and availability.</p>" },
+      { heading: "Tips for getting the most from a walking tour", content: "<ul><li><strong>Book a morning slot</strong> to beat the midday heat and the biggest crowds.</li><li><strong>Wear comfortable shoes;</strong> most tours cover a few kilometres over two to three hours.</li><li><strong>Pick a skip-the-line option</strong> for the sights with the worst queues so your time on foot is spent walking, not waiting.</li><li><strong>Check the language</strong> of the tour before booking, and look for small groups so you can hear the guide clearly.</li></ul>" }
+    ],
+    relatedTourSlugs: ["colosseum-roman-forum-and-palatine-hill-guided-tour", "colosseum-guided-tour-with-roman-forum-and-palatine-hill", "rome-vatican-museums-sistine-chapel-and-basilica-tour", "rome-st-peters-basilica-dome-climb-and-underground-tour", "trevi-fountain-subterranean-aqueducts-tour"],
+    faqs: [
+      { question: "How long are walking tours in Rome?", answer: "Most guided walking tours in Rome run two to three hours and cover a few kilometres at an easy pace, with stops at the main sights. Half-day and combination tours that include skip-the-line entry to a major attraction can run longer. Each listing shows the exact duration." },
+      { question: "Are Rome walking tours suitable for all ages?", answer: "Most are, though they involve a fair amount of walking and standing. Families are welcome on the majority of tours, and small-group formats make it easier to keep everyone together. If mobility is a concern, check the tour details or consider pairing a short walking tour with a hop-on hop-off bus pass." },
+      { question: "Do walking tours include skip-the-line entry?", answer: "Many do, especially the tours that visit ticketed attractions. Skip-the-line access is one of the biggest reasons to book a guided tour rather than going alone, since it can save an hour or more in peak season. Check each listing, as some are walking-only and others bundle priority entry." }
+    ],
+    publishedDate: "2026-07-14",
+    updatedDate: "2026-07-14",
+  },
 ];
 
 export function getGuideBySlug(slug: string): Guide | undefined {

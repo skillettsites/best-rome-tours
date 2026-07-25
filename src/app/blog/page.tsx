@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { tours } from '@/data/tours';
+import { blogPosts } from '@/data/blog-posts';
 import { SITE_URL, SITE_CITY, CONTENT_DATE } from '@/lib/constants';
 import { breadcrumbSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
@@ -16,6 +17,14 @@ export const metadata: Metadata = {
 
 // Ordered list of posts. Code-driven posts (like the Top 10) stay accurate as
 // ratings change; add new entries here as more posts ship.
+const decisionPosts = blogPosts.map((post) => ({
+  href: `/blog/${post.slug}`,
+  title: post.title,
+  excerpt: post.excerpt,
+  image: post.heroImage,
+  tag: 'Decision Guide',
+}));
+
 const posts = [
   {
     href: '/blog/top-10-tours',
@@ -24,6 +33,7 @@ const posts = [
     image: [...tours].sort((a, b) => b.rating - a.rating || b.reviewCount - a.reviewCount)[0]?.imageUrl,
     tag: 'Rankings',
   },
+  ...decisionPosts,
 ];
 
 export default function BlogIndex() {

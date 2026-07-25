@@ -3,6 +3,7 @@ import TrackedGYGLink from '@/components/TrackedGYGLink';
 import LocalPrice from '@/components/LocalPrice';
 import { tours } from '@/data/tours';
 import { categories } from '@/data/categories';
+import { blogPosts } from '@/data/blog-posts';
 import { SITE_CITY, GYG_PARTNER_ID, GYG_LOCATION_ID, GYG_CITY_URL } from '@/lib/constants';
 import { trustStats } from '@/lib/trust';
 
@@ -20,6 +21,18 @@ import SisterSites from '@/components/SisterSites';
 const byReviews = [...tours].sort((a, b) => b.rating - a.rating || b.reviewCount - a.reviewCount);
 const mostBookedTours = byReviews.slice(0, 6);
 const featuredTours = byReviews.slice(6, 12);
+
+const decisionGuideSlugs = [
+  'is-the-colosseum-tour-worth-it',
+  'colosseum-vs-vatican-which-to-do-first',
+  'best-colosseum-ticket-which-tour-to-book',
+  'how-to-skip-the-line-in-rome',
+  'is-a-vatican-museums-tour-worth-it',
+  'rome-skip-the-line-combo-tour-worth-it',
+];
+const decisionGuides = decisionGuideSlugs
+  .map((slug) => blogPosts.find((p) => p.slug === slug))
+  .filter((p): p is NonNullable<typeof p> => p !== undefined);
 
 const testimonials = [
   { quote: `Booking ahead through the site was effortless. We skipped the long queue and walked straight in. Easily the highlight of our trip to ${SITE_CITY}.`, author: 'Sarah M.', location: 'United States', rating: 5 },
@@ -157,6 +170,43 @@ export default function HomePage() {
           <div data-gyg-href="https://widget.getyourguide.com/default/city.frame" data-gyg-location-id={GYG_LOCATION_ID} data-gyg-locale-code="en-US" data-gyg-widget="city" data-gyg-partner-id={GYG_PARTNER_ID} />
         </div>
       </section>
+
+      {/* Decision guides: "is it worth it" trip-planning content */}
+      {decisionGuides.length > 0 && (
+        <section className="bg-surface-muted">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+            <SectionHeader
+              eyebrow="Trip planning"
+              title={`Is it worth it? ${SITE_CITY} trip-planning guides`}
+              subtitle="Honest verdicts on which tickets and tours are actually worth booking, so you spend on the right one."
+              action={{ label: 'All guides', href: '/blog' }}
+            />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+              {decisionGuides.map((post, i) => (
+                <RevealOnScroll key={post.slug} delay={(i % 3) * 0.08}>
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="group flex h-full flex-col rounded-card-lg border border-border bg-surface p-6 transition-colors hover:border-primary"
+                  >
+                    <h3 className="text-lg font-semibold text-on-surface group-hover:text-primary transition-colors">
+                      {post.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-on-surface-2 leading-relaxed flex-1">
+                      {post.excerpt}
+                    </p>
+                    <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
+                      Read the guide
+                      <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </span>
+                  </Link>
+                </RevealOnScroll>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <SisterSites currentCity={SITE_CITY} />
 

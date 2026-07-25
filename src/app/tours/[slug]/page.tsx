@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { tours, getTourBySlug, getRelatedTours } from '@/data/tours';
 import { categories } from '@/data/categories';
 import { guides } from '@/data/guides';
+import { blogPosts } from '@/data/blog-posts';
 import { tourSchema, touristTripSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { SITE_URL } from '@/lib/constants';
 import { TOP_CONVERTER_BY_DESTINATION } from '@/lib/trust';
@@ -33,6 +34,33 @@ const categoryGuideMap: Record<string, string[]> = {
 };
 
 const REDIRECTED = new Set<string>([]);
+
+// Decision-guide blog posts surfaced on tour pages, matched to the tour by slug keyword.
+const DECISION_GUIDES_DEFAULT = [
+  'how-to-skip-the-line-in-rome',
+  'is-the-colosseum-tour-worth-it',
+  'colosseum-vs-vatican-which-to-do-first',
+];
+const DECISION_GUIDES_COLOSSEUM = [
+  'is-the-colosseum-tour-worth-it',
+  'best-colosseum-ticket-which-tour-to-book',
+  'colosseum-arena-floor-vs-underground-tour',
+];
+const DECISION_GUIDES_VATICAN = [
+  'is-a-vatican-museums-tour-worth-it',
+  'vatican-vs-st-peters-basilica-which-tour',
+  'colosseum-vs-vatican-which-to-do-first',
+];
+
+function decisionGuidesForTour(slug: string) {
+  const s = slug.toLowerCase();
+  let picks = DECISION_GUIDES_DEFAULT;
+  if (/vatican|sistine|st-peters|basilica/.test(s)) picks = DECISION_GUIDES_VATICAN;
+  else if (/colosseum|arena|forum|palatine|gladiator/.test(s)) picks = DECISION_GUIDES_COLOSSEUM;
+  return picks
+    .map((gs) => blogPosts.find((p) => p.slug === gs))
+    .filter((p): p is NonNullable<typeof p> => p !== undefined);
+}
 
 export function generateStaticParams() {
   return tours.filter((t) => !REDIRECTED.has(t.slug)).map((tour) => ({ slug: tour.slug }));
@@ -323,6 +351,28 @@ export default async function TourPage({ params }: { params: Params }) {
                     <Link href={`/guides/${guide.slug}`} className="block group">
                       <span className="text-primary font-medium group-hover:underline">{guide.title}</span>
                       <p className="text-sm text-on-surface-2 mt-0.5">{guide.excerpt}</p>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          );
+        })()}
+
+        {/* Related decision guides */}
+        {(() => {
+          const relatedDecisionGuides = decisionGuidesForTour(tour.slug);
+          if (relatedDecisionGuides.length === 0) return null;
+          return (
+            <section className="mt-16 rounded-card-lg border border-border bg-surface p-6 sm:p-8">
+              <h2 className="text-xl font-semibold text-on-surface mb-1">Related guides</h2>
+              <p className="text-sm text-on-surface-2 mb-4">Worth-it verdicts to help you pick the right ticket before you book.</p>
+              <ul className="space-y-3">
+                {relatedDecisionGuides.map((post) => (
+                  <li key={post.slug}>
+                    <Link href={`/blog/${post.slug}`} className="block group">
+                      <span className="text-primary font-medium group-hover:underline">{post.title}</span>
+                      <p className="text-sm text-on-surface-2 mt-0.5">{post.excerpt}</p>
                     </Link>
                   </li>
                 ))}

@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
       'Is a guided Colosseum tour worth the money, or should you just buy entry? Our honest 2026 verdict, with real prices, what you actually get, and which tour to book.',
     excerpt:
       'The short answer is yes, with one exception. Here is when a guided Colosseum tour is worth every pound and when a cheaper ticket does the job.',
-    heroImage: 'https://cdn.getyourguide.com/img/tour/33cca66c19886c9f.jpeg/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/33cca66c19886c9f.jpeg/99.jpg',
     heroImageAlt: 'The Colosseum in Rome, exterior arches lit at golden hour',
     content: `<p>Here is the honest verdict up front: for a first visit to Rome, a guided Colosseum tour is worth it. The reason has nothing to do with skipping the line, though that helps. It is that the Colosseum tells you almost nothing on its own. There are barely any signs inside, no roped-off "this is where the emperor sat" markers, just a vast stone shell that leaves most people wandering for twenty minutes and then leaving. A guide turns that shell back into a working arena.</p>
 
@@ -87,7 +87,7 @@ export const blogPosts: BlogPost[] = [
       'Colosseum vs Vatican in Rome: which to visit first, how to avoid doing both in one day, and the smartest order for a 2 or 3 day trip. Real prices and tour links.',
     excerpt:
       'They sit at opposite ends of Rome and both eat half a day. Here is the order that keeps you sane, plus why the day of the week matters more than you think.',
-    heroImage: 'https://cdn.getyourguide.com/img/tour/33cca66c19886c9f.jpeg/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/33cca66c19886c9f.jpeg/99.jpg',
     heroImageAlt: 'The Colosseum arches in Rome under a clear sky',
     content: `<p>This is the single most common Rome planning question, and the answer is not "whichever you prefer". The Colosseum and the Vatican are at opposite ends of the city, each swallows around half a day, and each has its own quirks around crowds and opening times. Get the order right and both feel relaxed. Get it wrong and you spend your trip crossing Rome at rush hour and queuing in the sun.</p>
 
@@ -159,7 +159,7 @@ export const blogPosts: BlogPost[] = [
       'Arena Floor or Underground at the Colosseum? A clear comparison of what each tour includes, real 2026 prices, crowd levels and which is the better upgrade.',
     excerpt:
       'Both are premium Colosseum upgrades and they are not the same thing. Here is exactly what you see on each and which is the smarter spend.',
-    heroImage: 'https://cdn.getyourguide.com/img/tour/94228a891b57dd5ac3f35040d77c0d5045f72c51aaf096f868ed50367e406c22.jpg/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/94228a891b57dd5ac3f35040d77c0d5045f72c51aaf096f868ed50367e406c22.jpg/99.jpg',
     heroImageAlt: 'The reconstructed Colosseum arena floor with tiered seating behind',
     content: `<p>Once you have decided to upgrade beyond a standard Colosseum ticket, two options compete for your money: the <strong>Arena Floor</strong> and the <strong>Underground</strong>. People often assume they are interchangeable. They are not. They show you two completely different parts of the amphitheatre, and only one of them can be done on its own.</p>
 
@@ -228,7 +228,7 @@ export const blogPosts: BlogPost[] = [
       "Vatican Museums or St Peter's Basilica: what is the difference, do you need both, and which tour to book? Real 2026 prices, dome climb tips and skip-the-line advice.",
     excerpt:
       "People assume they are the same place. They are two separate sites with separate tickets. Here is what each one is and which you actually need.",
-    heroImage: 'https://cdn.getyourguide.com/img/tour/b64379eb32590b6e.jpeg/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/b64379eb32590b6e.jpeg/99.jpg',
     heroImageAlt: "St Peter's Basilica dome and Vatican skyline in Rome",
     content: `<p>The most common Vatican mix-up is thinking the Museums and the Basilica are one visit. They are two different attractions, in two different queues, with two different tickets. The <strong>Vatican Museums</strong> end at the Sistine Chapel; <strong>St Peter's Basilica</strong> is the enormous church on St Peter's Square. Knowing which is which decides how you spend a full morning in Vatican City.</p>
 
@@ -304,7 +304,7 @@ export const blogPosts: BlogPost[] = [
       'Are Rome skip-the-line and combo tours worth it? How much time and money they really save at the Colosseum and Vatican, plus which combos are worth booking.',
     excerpt:
       'Skip-the-line sounds like an upsell until you see the July queues. Here is the real maths on whether combo tours pay for themselves.',
-    heroImage: 'https://cdn.getyourguide.com/img/tour/33cca66c19886c9f.jpeg/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/33cca66c19886c9f.jpeg/99.jpg',
     heroImageAlt: 'Crowds outside the Colosseum in Rome on a summer day',
     content: `<p>Skip-the-line and combo tours are the products travellers are most suspicious of, because they sound like a way to charge you extra for something you could arrange yourself. In Rome specifically, the honest answer is that they are usually worth it, and the reason is the sheer scale of the queues at the two sites everyone visits.</p>
 
@@ -373,7 +373,7 @@ export const blogPosts: BlogPost[] = [
       'Confused by Colosseum ticket options? A plain-English guide to every type, from £21 guided to Arena Floor and Underground, with real 2026 prices and who each suits.',
     excerpt:
       'There are at least six ways to book the Colosseum and they are not clearly labelled. This breaks down every option and who each one is for.',
-    heroImage: 'https://cdn.getyourguide.com/img/tour/33cca66c19886c9f.jpeg/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/33cca66c19886c9f.jpeg/99.jpg',
     heroImageAlt: 'Interior tiers and arena of the Colosseum in Rome',
     content: `<p>The Colosseum has one of the most confusing ticket menus in travel. Entry-only, entry with audio, guided, Arena Floor, Underground, evening, sunset, the names overlap and the prices jump around. Here is a plain-English breakdown of every type sold, ranked by who it actually suits, so you can book once and book right.</p>
 
@@ -462,7 +462,7 @@ export const blogPosts: BlogPost[] = [
       'Is a guided Vatican Museums tour worth it, or is a skip-the-line ticket enough? An honest verdict with real prices, crowd tips and the Sistine Chapel reality.',
     excerpt:
       'The Vatican Museums are overwhelming and relentlessly busy. Here is when a guide is worth it and when a skip-the-line ticket is all you need.',
-    heroImage: 'https://cdn.getyourguide.com/img/tour/5f16d60b18470.jpeg/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/5f16d60b18470.jpeg/99.jpg',
     heroImageAlt: 'Ornate gallery ceiling inside the Vatican Museums in Rome',
     content: `<p>The Vatican Museums hold one of the greatest art collections on earth and they are also one of the most exhausting visits in Rome: two kilometres of galleries, tens of thousands of daily visitors, and a single crowded funnel toward the Sistine Chapel. So is a guided tour worth it, or is a skip-the-line ticket enough? The answer depends on how much you want the art explained versus simply seeing it.</p>
 
@@ -534,7 +534,7 @@ export const blogPosts: BlogPost[] = [
       'How to skip the line at Rome’s Colosseum, Vatican, St Peter’s Basilica and Castel Sant’Angelo. Which fast-track tickets work, real prices and the timing that matters.',
     excerpt:
       'Rome’s queues can eat half a day if you turn up cold. Here is exactly how to skip the line at every major attraction, and what it costs.',
-    heroImage: 'https://cdn.getyourguide.com/img/tour/5f16d60b18470.jpeg/145.jpg',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/5f16d60b18470.jpeg/99.jpg',
     heroImageAlt: 'Visitors moving through a grand Vatican Museums gallery in Rome',
     content: `<p>Rome runs on queues. The Colosseum, the Vatican and St Peter's Basilica each draw tens of thousands of visitors a day, and in summer the standby lines are long, hot and shadeless. The good news is that almost every wait in Rome is avoidable if you pre-book the right fast-track ticket. Here is how to skip the line at each of the big four, and how much it costs.</p>
 

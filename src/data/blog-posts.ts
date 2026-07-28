@@ -27,9 +27,9 @@ export const blogPosts: BlogPost[] = [
 
 <h2>When a tour is not worth it</h2>
 
-<p>If you have already visited Rome, or you are a confident independent traveller who genuinely enjoys reading up beforehand, you can skip the guide. In that case the sensible choice is a timed-entry ticket with an audio guide, which starts lower and still gets you past the ticket queue. A budget guided option also exists from around £21 if you want a live guide without the premium price.</p>
+<p>If you have already visited Rome, or you are a confident independent traveller who genuinely enjoys reading up beforehand, you can skip the guide. In that case the sensible choice is a timed-entry ticket with an audio guide, which starts lower and still gets you past the ticket queue. A budget guided option also exists from around £15 if you want a live guide without the premium price.</p>
 
-<p><a href="https://www.getyourguide.com/activity/-t730145?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">See the budget guided Colosseum tour from £21 &rarr;</a></p>
+<p><a href="https://www.getyourguide.com/activity/-t730145?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">See the budget guided Colosseum tour from £15 &rarr;</a></p>
 
 <h2>Is it worth upgrading to the Arena Floor?</h2>
 
@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: 'How much does a Colosseum tour cost in 2026?',
         answer:
-          'A budget guided tour starts from around £21, a standard Colosseum, Forum and Palatine Hill guided tour from around £42, and the Arena Floor upgrade from around £33. All include the Forum and Palatine Hill on the same ticket.',
+          'A budget guided tour starts from around £15, a standard Colosseum, Forum and Palatine Hill guided tour from around £42, and the Arena Floor upgrade from around £33. All include the Forum and Palatine Hill on the same ticket.',
       },
       {
         question: 'Is the Colosseum Arena Floor upgrade worth the extra money?',
@@ -171,13 +171,13 @@ export const blogPosts: BlogPost[] = [
 
 <h2>What the Underground tour gives you</h2>
 
-<p>The Underground, or hypogeum, is the network of tunnels and cells beneath the arena where gladiators waited and animals were caged before being winched up through trapdoors. A tour with <strong>optional Underground access</strong> runs from around £115 and typically bundles the Arena Floor as well, so you get both levels. This is the deep-dive option: dim, atmospheric and genuinely rare, because the hypogeum has strict visitor limits and sells out well ahead.</p>
+<p>The Underground, or hypogeum, is the network of tunnels and cells beneath the arena where gladiators waited and animals were caged before being winched up through trapdoors. A tour with <strong>optional Underground access</strong> runs from around £98 and typically bundles the Arena Floor as well, so you get both levels. This is the deep-dive option: dim, atmospheric and genuinely rare, because the hypogeum has strict visitor limits and sells out well ahead.</p>
 
 <p><a href="https://www.getyourguide.com/activity/-t582858?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">See the Colosseum Arena, Forum and optional Underground tour &rarr;</a></p>
 
 <h2>The honest price comparison</h2>
 
-<p>This is where the decision usually gets made. The Arena Floor sits around £33, while the Underground package is roughly £115 because the hypogeum requires a specialist small-group licence and limited entry. If your budget is tight, the Arena Floor delivers about eighty percent of the "wow" for well under half the price. The Underground is for history obsessives and repeat visitors who have already done the standard circuit and want to see the machinery behind the spectacle.</p>
+<p>This is where the decision usually gets made. The Arena Floor sits around £33, while the Underground package is roughly £98 because the hypogeum requires a specialist small-group licence and limited entry. If your budget is tight, the Arena Floor delivers about eighty percent of the "wow" for well under half the price. The Underground is for history obsessives and repeat visitors who have already done the standard circuit and want to see the machinery behind the spectacle.</p>
 
 <h2>Which should you book?</h2>
 
@@ -209,7 +209,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: 'Is the Colosseum Underground tour worth the extra cost?',
         answer:
-          'For history lovers and repeat visitors, yes, because access is capped and atmospheric. For most first-timers the Arena Floor from around £33 delivers most of the impact for well under half the price of the roughly £115 Underground package.',
+          'For history lovers and repeat visitors, yes, because access is capped and atmospheric. For most first-timers the Arena Floor from around £33 delivers most of the impact for under half the price of the roughly £98 Underground package.',
       },
       {
         question: 'Do I need to book the Colosseum Underground in advance?',
@@ -383,7 +383,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>A live guide, the Colosseum, the Forum and Palatine Hill, at the lowest guided price. This is the value sweet spot for travellers who want the history explained but do not need the Arena Floor. You are on the standard tiers rather than the arena, but you get everything the standard experience offers with a real person narrating it.</p>
 
-<p><a href="https://www.getyourguide.com/activity/-t730145?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">Check the budget guided Colosseum tour from £21 &rarr;</a></p>
+<p><a href="https://www.getyourguide.com/activity/-t730145?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">Check the budget guided Colosseum tour from £15 &rarr;</a></p>
 
 <h2>2. Entry with audio guide, from around £36</h2>
 
@@ -435,7 +435,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: 'Which Colosseum ticket is best?',
         answer:
-          'For most first-timers the standard guided Colosseum, Forum and Palatine Hill tour from around £42 is the best all-rounder. The Arena Floor tour from around £33 is the best experience for the money, and a £21 guided tour is the best value.',
+          'For most first-timers the standard guided Colosseum, Forum and Palatine Hill tour from around £42 is the best all-rounder. The Arena Floor tour from around £33 is the best experience for the money, and a £15 guided tour is the best value.',
       },
       {
         question: 'What is the cheapest guided Colosseum tour?',
@@ -482,9 +482,9 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The middle option</h2>
 
-<p>Between the two sits a skip-the-line entry that still lets you self-guide but often bundles a little more structure, from around £36. If you want the queue-jump plus a bit more certainty about your route than a bare ticket, it is a reasonable halfway house.</p>
+<p>Between the two sits a skip-the-line entry that still lets you self-guide but often bundles a little more structure, from around £35. If you want the queue-jump plus a bit more certainty about your route than a bare ticket, it is a reasonable halfway house.</p>
 
-<p><a href="https://www.getyourguide.com/activity/-t478473?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">Compare the Vatican skip-the-line entry from £36 &rarr;</a></p>
+<p><a href="https://www.getyourguide.com/activity/-t478473?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">Compare the Vatican skip-the-line entry from £35 &rarr;</a></p>
 
 <h2>What you cannot avoid</h2>
 
@@ -653,11 +653,11 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The papal tombs under St Peter's: the one we do rank</h2>
 
-<p>If the appeal of the catacombs is standing among the dead of early Christian Rome, the Vatican Grottoes deliver a version of that in the middle of the city, for very little money. The <strong>pre-reserved St Peter's Basilica ticket</strong> from £10 gets you past the security queue on St Peter's Square, and the listing pairs the Basilica with the papal tombs beneath it. Rated 4.3 out of 5 by 1,106 verified travellers. For a tenner, it is the cheapest worthwhile underground visit in Rome.</p>
+<p>If the appeal of the catacombs is standing among the dead of early Christian Rome, the Vatican Grottoes deliver a version of that in the middle of the city, for very little money. The <strong>pre-reserved St Peter's Basilica ticket</strong> from £10 gets you past the security queue on St Peter's Square, and the listing pairs the Basilica with the papal tombs beneath it. Rated 4.3 out of 5 by 1,150 verified travellers. For a tenner, it is the cheapest worthwhile underground visit in Rome.</p>
 
 <p><a href="https://www.getyourguide.com/activity/-t877700?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">Check the pre-reserved St Peter's Basilica entry from £10 &rarr;</a></p>
 
-<p>If you want a guide rather than just entry, the <strong>St Peter's Basilica, Dome Climb and Papal Tombs tour</strong> from £16 covers Michelangelo's Pietà, the Vatican Grottoes and the tombs of St Peter, with the dome climb on top. Rated 4.5 by 3,220 travellers, and at £16 it is the best value guided tour anywhere in the Vatican.</p>
+<p>If you want a guide rather than just entry, the <strong>St Peter's Basilica, Dome Climb and Papal Tombs tour</strong> from £16 covers Michelangelo's Pietà, the Vatican Grottoes and the tombs of St Peter, with the dome climb on top. Rated 4.5 by 3,444 travellers, and at £16 it is the best value guided tour anywhere in the Vatican.</p>
 
 <p><a href="https://www.getyourguide.com/activity/-t1076156?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">See the Dome Climb and Papal Tombs tour from £16 &rarr;</a></p>
 
@@ -667,17 +667,17 @@ export const blogPosts: BlogPost[] = [
 
 <p>Plenty of people searching for catacombs are really after the same feeling: the city beneath the city. Rome does that in several places, and two of them are easier to reach than the Appian Way.</p>
 
-<p>The <strong>Trevi Fountain and subterranean aqueducts tour</strong> from £21 takes you under the fountain into the ancient water channels that still feed it, which is a genuinely strange thing to stand in. Rated 4.1 by 239 travellers, so a smaller sample than the headline tours, but a rare piece of access.</p>
+<p>The <strong>Trevi Fountain and subterranean aqueducts tour</strong> from £21 takes you under the fountain into the ancient water channels that still feed it, which is a genuinely strange thing to stand in. Rated 4.1 by 292 travellers, so a smaller sample than the headline tours, but a rare piece of access.</p>
 
-<p><a href="https://www.getyourguide.com/activity/-t1251833?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">Compare the Trevi Fountain and aqueducts tour from £21 &rarr;</a></p>
+<p><a href="https://www.getyourguide.com/activity/-t1251833?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">Compare the Trevi Fountain and aqueducts tour from £22 &rarr;</a></p>
 
-<p>At the Colosseum, the equivalent is the <strong>hypogeum</strong>, the two-level tunnel system under the arena floor where animals and gladiators waited. It is sold as an optional upgrade on the Colosseum Arena, Forum and Hill tour from £115, rated 4.5 by 1,880 travellers. Expensive, and worth it only if underground Rome is the reason you came.</p>
+<p>At the Colosseum, the equivalent is the <strong>hypogeum</strong>, the two-level tunnel system under the arena floor where animals and gladiators waited. It is sold as an optional upgrade on the Colosseum Arena, Forum and Hill tour from £98, rated 4.5 by 1,905 travellers. Expensive, and worth it only if underground Rome is the reason you came.</p>
 
-<p><a href="https://www.getyourguide.com/activity/-t582858?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">See the Colosseum tour with optional underground from £115 &rarr;</a></p>
+<p><a href="https://www.getyourguide.com/activity/-t582858?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">See the Colosseum tour with optional underground from £98 &rarr;</a></p>
 
 <h2>The verdict</h2>
 
-<p>For most visitors, the papal tombs under St Peter's are the right call: £10 for pre-reserved entry, or £16 for the guided version with the dome climb, in a place you are already going. Book an Appian Way catacombs tour only if the early Christian tunnels are a specific goal of your trip, and book it on operator reviews rather than on the word catacombs in the title, since the sites are the same for everyone and the guiding and transport are what vary. And if the pull is underground Rome rather than burial sites in particular, the Trevi aqueducts at £21 give you more of that feeling per pound than anything else in the centre.</p>
+<p>For most visitors, the papal tombs under St Peter's are the right call: £10 for pre-reserved entry, or £16 for the guided version with the dome climb, in a place you are already going. Book an Appian Way catacombs tour only if the early Christian tunnels are a specific goal of your trip, and book it on operator reviews rather than on the word catacombs in the title, since the sites are the same for everyone and the guiding and transport are what vary. And if the pull is underground Rome rather than burial sites in particular, the Trevi aqueducts at £22 give you more of that feeling per pound than anything else in the centre.</p>
 
 <p>One last thing, whichever you choose: the churches and the Basilica enforce a dress code, shoulders and knees covered. It applies underground too, and no ticket gets you past it.</p>`,
     relatedTourSlugs: [

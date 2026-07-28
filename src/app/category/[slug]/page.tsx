@@ -23,14 +23,14 @@ const categorySeoBlocks: Record<string, SeoBlock[]> = {
     },
     {
       heading: 'Private skip-the-line options in Rome',
-      html: `<p>Fully private skip-the-line tours exist in Rome, but they are the exception rather than the rule and they carry a real premium. In our ranked list the closest equivalents are small-group and VIP formats rather than one-to-one private guiding: the Colosseum with Arena Floor tours and ticket options from £107 runs a VIP arena visit in a group capped at ten, and the Rome VIP Private Golf Cart Experience from £37 is genuinely private, with a customised route, though it is a city sightseeing tour rather than a fast-track museum ticket.</p>
+      html: `<p>Fully private skip-the-line tours exist in Rome, but they are the exception rather than the rule and they carry a real premium. In our ranked list the closest equivalents are small-group and VIP formats rather than one-to-one private guiding: the Colosseum with Arena Floor tours and ticket options from £107 runs a VIP arena visit in a group capped at ten, and the Rome VIP Private Golf Cart Experience from £68 is genuinely private, with a customised route, though it is a city sightseeing tour rather than a fast-track museum ticket.</p>
 <p>If your reason for wanting private is speed rather than exclusivity, a standard skip-the-line ticket already does most of the work, since the queue-jump is built into the ticket and not into the group size. Weigh it up in the <a href="/blog/rome-skip-the-line-combo-tour-worth-it">Rome skip-the-line combo tour</a> verdict, or read the practical, attraction-by-attraction walkthrough in our guide to <a href="/guides/skip-the-line-rome">skip-the-line tickets in Rome</a>.</p>`,
     },
   ],
   'guided-tours': [
     {
       heading: 'How much does a guided tour of Rome cost?',
-      html: `<p>Guided tours in Rome start from around £21 for a budget group tour of the Colosseum, Roman Forum and Palatine Hill, sit at roughly £42 to £68 for the standard guided tours of the Colosseum and the Vatican, and rise to £107 to £115 for VIP small-group formats with arena floor or underground access. The guide is what you are paying for, and at the big sites it is the difference between a stone shell and a working arena.</p>
+      html: `<p>Guided tours in Rome start from around £15 for a budget group tour of the Colosseum, Roman Forum and Palatine Hill, sit at roughly £42 to £59 for the standard guided tours of the Colosseum and the Vatican, and rise to £98 to £107 for VIP small-group formats with arena floor or underground access. The guide is what you are paying for, and at the big sites it is the difference between a stone shell and a working arena.</p>
 <p>We compare group, small-group and private formats side by side, with prices and who each one suits, in our guide to the <a href="/guides/best-guided-tours-in-rome">best guided tours in Rome</a>.</p>`,
     },
   ],

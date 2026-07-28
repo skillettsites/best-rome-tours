@@ -24,15 +24,15 @@ const DECISION_VERDICTS: Record<string, string> = {
   'colosseum-vs-vatican-which-to-do-first':
     'Verdict: do the Colosseum first (first morning), the Vatican on a separate day. Never try both properly in one day; they sit at opposite ends of Rome and each needs 3 to 4 hours.',
   'colosseum-arena-floor-vs-underground-tour':
-    'Verdict: Arena Floor (from £33) is the best-value upgrade for first-timers; the Underground package (from £115) is for history lovers and repeat visitors and usually includes the Arena Floor too.',
+    'Verdict: Arena Floor (from £33) is the best-value upgrade for first-timers; the Underground package (from £98) is for history lovers and repeat visitors and usually includes the Arena Floor too.',
   'vatican-vs-st-peters-basilica-which-tour':
-    'Verdict: they are separate sites. First-timers should book the combined Museums, Sistine Chapel and Basilica tour (from £63); for St Peter’s alone, a dome tour (from £28) or a £10 pre-reserved entry works.',
+    'Verdict: they are separate sites. First-timers should book the combined Museums, Sistine Chapel and Basilica tour (from £59); for St Peter’s alone, a dome tour (from £28) or a £10 pre-reserved entry works.',
   'rome-skip-the-line-combo-tour-worth-it':
     'Verdict: yes in peak season. Colosseum and Vatican queues run to 90 minutes or more, so skip-the-line combos (Colosseum from £42, Vatican from £51) pay for themselves; off-season a timed entry with audio is the value pick.',
   'best-colosseum-ticket-which-tour-to-book':
-    'Verdict: standard guided tour (from £42) is the best all-rounder, budget guided (from £21) the best value, Arena Floor (from £33) the best experience. All include the Roman Forum and Palatine Hill.',
+    'Verdict: standard guided tour (from £42) is the best all-rounder, budget guided (from £15) the best value, Arena Floor (from £33) the best experience. All include the Roman Forum and Palatine Hill.',
   'is-a-vatican-museums-tour-worth-it':
-    'Verdict: go guided (from £63) on a first visit to make the art mean something; a skip-the-line entry ticket (from £28) is genuinely enough for confident museum-goers. Everyone should buy some form of fast-track.',
+    'Verdict: go guided (from £59) on a first visit to make the art mean something; a skip-the-line entry ticket (from £28) is genuinely enough for confident museum-goers. Everyone should buy some form of fast-track.',
   'how-to-skip-the-line-in-rome':
     'Verdict: pre-book timed tickets for everything. The Vatican skip-the-line (from £28) and Colosseum timed combo (from £42) save the most time; St Peter’s (from £10) and Castel Sant’Angelo (from £15) mop up the rest.',
   'which-rome-catacombs-tour-is-worth-it':

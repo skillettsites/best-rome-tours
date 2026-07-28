@@ -42,7 +42,7 @@ export const tours: Tour[] = [
     metaDescription: 'Book Vatican Museums, Sistine Chapel & St. Peter\'s Basilica Tour in Rome. Instant confirmation, free cancellation on most options. Rated 4.3★ by 80,736 travellers.',
     description: 'Join a guided tour of the Vatican with fast-track access. Explore the Vatican Museums, the Sistine Chapel, and St. Peter\'s Basilica.',
     excerpt: 'Join a guided tour of the Vatican with fast-track access. Explore the Vatican Museums, the Sistine Chapel, and St.…',
-    price: 63,
+    price: 59,
     currency: 'GBP',
     duration: 'Varies',
     rating: 4.3,

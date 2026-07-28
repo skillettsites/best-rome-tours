@@ -103,7 +103,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Why the Vatican needs its own day</h2>
 
-<p>The Vatican is indoors, vast, and relentlessly busy. The Museums funnel every visitor through the same corridors toward the Sistine Chapel, so the experience is about timing rather than weather. A guided Vatican Museums, Sistine Chapel and St Peter's Basilica tour from around £63 gets you fast-track entry and, crucially, someone steering you through the crowd on the most efficient route. Mondays are heavier because many other Rome sites close, and the Vatican Museums shut on Sundays except the last Sunday of the month, when they are free and therefore mobbed.</p>
+<p>The Vatican is indoors, vast, and relentlessly busy. The Museums funnel every visitor through the same corridors toward the Sistine Chapel, so the experience is about timing rather than weather. A guided Vatican Museums, Sistine Chapel and St Peter's Basilica tour from around £59 gets you fast-track entry and, crucially, someone steering you through the crowd on the most efficient route. Mondays are heavier because many other Rome sites close, and the Vatican Museums shut on Sundays except the last Sunday of the month, when they are free and therefore mobbed.</p>
 
 <p><a href="https://www.getyourguide.com/activity/-t1103?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">Check the Vatican Museums, Sistine Chapel and Basilica tour &rarr;</a></p>
 
@@ -242,7 +242,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Do you need both?</h2>
 
-<p>Most first-timers should do both, and the smartest route is a combined tour that runs the Museums and Sistine Chapel first, then walks you straight into the Basilica through the internal connection, bypassing the outdoor security line. That combined guided tour starts from around £63 and is the most efficient way to see all of Vatican City in one morning.</p>
+<p>Most first-timers should do both, and the smartest route is a combined tour that runs the Museums and Sistine Chapel first, then walks you straight into the Basilica through the internal connection, bypassing the outdoor security line. That combined guided tour starts from around £59 and is the most efficient way to see all of Vatican City in one morning.</p>
 
 <p><a href="https://www.getyourguide.com/activity/-t1103?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">Book the Vatican Museums, Sistine Chapel and Basilica tour &rarr;</a></p>
 
@@ -280,7 +280,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Do I need to visit both the Vatican Museums and St Peter's Basilica?",
         answer:
-          'Most first-timers should. A combined tour from around £63 does the Museums and Sistine Chapel then walks you into the Basilica, skipping the outdoor security line, which is the most efficient way to see all of Vatican City in one morning.',
+          'Most first-timers should. A combined tour from around £59 does the Museums and Sistine Chapel then walks you into the Basilica, skipping the outdoor security line, which is the most efficient way to see all of Vatican City in one morning.',
       },
       {
         question: "Is St Peter's Basilica free to enter?",
@@ -470,9 +470,9 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The case for going guided</h2>
 
-<p>Without context, the Museums become a blur of gilded rooms you walk through without knowing why they matter. A guide picks the highlights out of the overwhelm: the Raphael Rooms, the Gallery of Maps, the tapestries, and then the Sistine Chapel, where they explain what you are looking at before you enter, because once inside you cannot talk loudly or take photos. A guided tour from around £63 that also includes St Peter's Basilica is the fullest version, and it uses the internal route into the Basilica to skip the outdoor security line.</p>
+<p>Without context, the Museums become a blur of gilded rooms you walk through without knowing why they matter. A guide picks the highlights out of the overwhelm: the Raphael Rooms, the Gallery of Maps, the tapestries, and then the Sistine Chapel, where they explain what you are looking at before you enter, because once inside you cannot talk loudly or take photos. A guided tour from around £59 that also includes St Peter's Basilica is the fullest version, and it uses the internal route into the Basilica to skip the outdoor security line.</p>
 
-<p><a href="https://www.getyourguide.com/activity/-t1103?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">Check the guided Vatican Museums and Basilica tour from £63 &rarr;</a></p>
+<p><a href="https://www.getyourguide.com/activity/-t1103?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">Check the guided Vatican Museums and Basilica tour from £59 &rarr;</a></p>
 
 <h2>The case for a skip-the-line ticket</h2>
 
@@ -507,7 +507,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: 'Is a guided Vatican Museums tour worth it?',
         answer:
-          'For a first visit, yes. The Museums are vast and unlabelled, so a guide picks out the highlights and explains the Sistine Chapel before you enter. A combined guided tour with St Peter’s Basilica from around £63 is the fullest option.',
+          'For a first visit, yes. The Museums are vast and unlabelled, so a guide picks out the highlights and explains the Sistine Chapel before you enter. A combined guided tour with St Peter’s Basilica from around £59 is the fullest option.',
       },
       {
         question: 'Can I visit the Vatican Museums without a guide?',

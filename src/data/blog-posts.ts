@@ -334,7 +334,9 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The verdict</h2>
 
-<p>For the Colosseum and Vatican, yes, skip-the-line combos are worth it in peak season, both for the time saved and because the combo format makes you actually use the neighbouring sites. Off-season, or if you love going independent, a timed entry with an audio app is the value pick. The only genuine waste is a walk-up with no booking at all in summer.</p>`,
+<p>For the Colosseum and Vatican, yes, skip-the-line combos are worth it in peak season, both for the time saved and because the combo format makes you actually use the neighbouring sites. Off-season, or if you love going independent, a timed entry with an audio app is the value pick. The only genuine waste is a walk-up with no booking at all in summer.</p>
+
+<p>To pick a specific ticket, browse the ranked <a href="/category/skip-the-line">skip-the-line tickets in Rome</a>, or work through the practical detail, entrances, time slots and dress codes, in our <a href="/guides/skip-the-line-rome">guide to skipping the line in Rome</a>.</p>`,
     relatedTourSlugs: [
       'colosseum-roman-forum-and-palatine-hill-guided-tour',
       'vatican-sistine-chapel-and-st-peters-skip-the-line-tour',
@@ -363,7 +365,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     publishedDate: '2026-07-25',
-    updatedDate: '2026-07-25',
+    updatedDate: '2026-07-28',
   },
   {
     slug: 'best-colosseum-ticket-which-tour-to-book',
@@ -536,7 +538,9 @@ export const blogPosts: BlogPost[] = [
       'Rome’s queues can eat half a day if you turn up cold. Here is exactly how to skip the line at every major attraction, and what it costs.',
     heroImage: 'https://cdn.getyourguide.com/img/tour/5f16d60b18470.jpeg/99.jpg',
     heroImageAlt: 'Visitors moving through a grand Vatican Museums gallery in Rome',
-    content: `<p>Rome runs on queues. The Colosseum, the Vatican and St Peter's Basilica each draw tens of thousands of visitors a day, and in summer the standby lines are long, hot and shadeless. The good news is that almost every wait in Rome is avoidable if you pre-book the right fast-track ticket. Here is how to skip the line at each of the big four, and how much it costs.</p>
+    content: `<p>The real question is not how skip-the-line works, it is whether it is worth paying for at each site. Here is the decision in one paragraph: at the <strong>Vatican Museums</strong> and the <strong>Colosseum</strong>, fast-track is worth it for almost everyone in almost every season, because the standby queues are long enough to eat a morning. At <strong>St Peter's Basilica</strong> it is worth £10 purely to skip the security screening on the square. At <strong>Castel Sant'Angelo</strong> it is a nice-to-have in summer and genuinely optional the rest of the year. Below is what each one costs and what you get back for it.</p>
+
+<p>If you already know you want fast-track and just need the practical mechanics, entrances, time slots and which ticket routes you where, our companion guide to <a href="/guides/skip-the-line-rome">skip-the-line tickets in Rome</a> covers that side. This page is about whether to spend the money in the first place, and the bundled option is weighed up separately in our <a href="/blog/rome-skip-the-line-combo-tour-worth-it">Rome skip-the-line combo tour</a> verdict.</p>
 
 <h2>Colosseum: book a timed combo ticket</h2>
 
@@ -572,7 +576,9 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The bottom line</h2>
 
-<p>You can walk past almost every queue in Rome for the price of planning ahead. The Vatican skip-the-line from £28 and the Colosseum timed combo from £42 are the two tickets that save the most time; St Peter's from £10 and Castel Sant'Angelo from £15 mop up the rest. Book the slots, turn up early, and Rome stops being a city of waiting.</p>`,
+<p>You can walk past almost every queue in Rome for the price of planning ahead. The Vatican skip-the-line from £28 and the Colosseum timed combo from £42 are the two tickets that save the most time; St Peter's from £10 and Castel Sant'Angelo from £15 mop up the rest. Book the slots, turn up early, and Rome stops being a city of waiting.</p>
+
+<p>Next steps: compare the ranked <a href="/category/skip-the-line">skip-the-line tickets in Rome</a>, read the practical entrance-by-entrance detail in our <a href="/guides/skip-the-line-rome">guide to skipping the line in Rome</a>, or check whether a <a href="/blog/rome-skip-the-line-combo-tour-worth-it">Rome skip-the-line combo tour</a> beats buying tickets one at a time.</p>`,
     relatedTourSlugs: [
       'vatican-museums-and-sistine-chapel-entrance-ticket',
       'colosseum-roman-forum-and-palatine-hill-guided-tour',
@@ -607,7 +613,113 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     publishedDate: '2026-07-25',
-    updatedDate: '2026-07-25',
+    updatedDate: '2026-07-28',
+  },
+  {
+    slug: 'which-rome-catacombs-tour-is-worth-it',
+    title: 'Which Rome Catacombs Tour Is Worth It?',
+    metaTitle: 'Which Rome Catacombs Tour Is Worth It in 2026?',
+    metaDescription:
+      'Rome catacombs tours compared: the Appian Way catacombs, the papal tombs under St Peter’s and the rest of underground Rome. What each one is, what it costs and which is actually worth booking.',
+    excerpt:
+      'Three completely different things get sold as a "Rome catacombs tour". Here is which one you actually want, and the honest answer on what we can and cannot book you.',
+    heroImage: 'https://cdn.getyourguide.com/img/tour/f074904bada1d6cf347a3942a94e3858af92d1d7145bd4c34da8fc12678c1ca6.jpeg/99.jpg',
+    heroImageAlt: "St Peter's Basilica in Vatican City, Rome",
+    content: `<p>Short answer: it depends which catacombs you mean, and most people searching this do not yet know there are three different answers. If you want the <strong>early Christian burial tunnels</strong>, those are on the Appian Way, and they can only be visited on a guided tour, but we do not currently list one, so we will tell you where to look instead. If you want the <strong>papal tombs under St Peter's Basilica</strong>, that is a different site entirely and it is the best-value underground visit in Rome, from £10. And if what you actually want is <em>underground Rome</em> in general, there are better options than either.</p>
+
+<h2>First, which catacombs do you mean?</h2>
+
+<p>Three separate things get sold under the word catacombs in Rome, and the listings rarely make the difference obvious:</p>
+
+<ul>
+<li><strong>The Christian catacombs on the Appian Way.</strong> San Callisto, San Sebastiano and Domitilla are the big three, with Priscilla on the Via Salaria a quieter fourth. These are the real thing: miles of narrow tunnels cut into soft tufa rock, lined with burial niches, dating from the second century onwards.</li>
+<li><strong>The papal tombs beneath St Peter's Basilica.</strong> Often listed as the "pope catacombs", these are the Vatican Grottoes under the Basilica floor, where most of the popes are buried. Not catacombs in the archaeological sense, but genuinely underground and genuinely moving.</li>
+<li><strong>The Capuchin Crypt on Via Veneto.</strong> The bone chapel, decorated with the remains of Capuchin friars. Frequently confused with the catacombs, and a completely different experience: theatrical rather than archaeological.</li>
+</ul>
+
+<p>Getting this right before you book is the whole game, because someone expecting Appian Way tunnels and arriving at a bone chapel is going to be disappointed, and vice versa.</p>
+
+<h2>The Appian Way catacombs: what a tour actually involves</h2>
+
+<p>You cannot wander the catacombs alone. Every one of the Appian Way sites admits visitors only in a guided group, led by an official guide, and that is not an upsell, it is the access rule. A visit typically runs around 30 to 45 minutes underground, on a fixed route, with commentary in your language. Entry itself is inexpensive by Rome standards; what you are usually paying a tour operator for is the transport out there and back, since the Appian Way sits well outside the historic centre.</p>
+
+<p>Two practical points that catch people out. Each of the main catacombs closes for one day a week and the closure days differ between sites, so check the specific catacomb rather than assuming they are all open. And the tunnels are cool, dim and uneven underfoot year-round, which is a relief in August and worth a jacket in February.</p>
+
+<p>Here is the honest part: we do not currently rank a dedicated Appian Way catacombs tour, because none of the catacombs tours met the review threshold we use for the tours on this site. Rather than invent a recommendation, the sensible move is to search the wider Rome catalogue directly and pick on operator reviews.</p>
+
+<p><a href="https://www.getyourguide.com/rome-l33/?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">Search Rome catacombs tours on GetYourGuide &rarr;</a></p>
+
+<p>When you compare listings, check three things: which catacomb it actually enters (the name should be in the description), whether transport from the centre is included, and whether the guide is the site's own official guide or the operator's. The good listings say all three plainly.</p>
+
+<h2>The papal tombs under St Peter's: the one we do rank</h2>
+
+<p>If the appeal of the catacombs is standing among the dead of early Christian Rome, the Vatican Grottoes deliver a version of that in the middle of the city, for very little money. The <strong>pre-reserved St Peter's Basilica ticket</strong> from £10 gets you past the security queue on St Peter's Square, and the listing pairs the Basilica with the papal tombs beneath it. Rated 4.3 out of 5 by 1,106 verified travellers. For a tenner, it is the cheapest worthwhile underground visit in Rome.</p>
+
+<p><a href="https://www.getyourguide.com/activity/-t877700?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">Check the pre-reserved St Peter's Basilica entry from £10 &rarr;</a></p>
+
+<p>If you want a guide rather than just entry, the <strong>St Peter's Basilica, Dome Climb and Papal Tombs tour</strong> from £16 covers Michelangelo's Pietà, the Vatican Grottoes and the tombs of St Peter, with the dome climb on top. Rated 4.5 by 3,220 travellers, and at £16 it is the best value guided tour anywhere in the Vatican.</p>
+
+<p><a href="https://www.getyourguide.com/activity/-t1076156?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">See the Dome Climb and Papal Tombs tour from £16 &rarr;</a></p>
+
+<p>One clarification worth having: the deepest level under the Basilica, the Vatican Necropolis, sometimes called the Scavi, is a separate archaeological site with strict numbers, booked directly through the Vatican's Excavations Office rather than through any tour platform. If that is specifically what you want, plan months ahead and book it there. The Grottoes tours above do not include it, and no reputable listing will claim otherwise.</p>
+
+<h2>If you really want underground Rome</h2>
+
+<p>Plenty of people searching for catacombs are really after the same feeling: the city beneath the city. Rome does that in several places, and two of them are easier to reach than the Appian Way.</p>
+
+<p>The <strong>Trevi Fountain and subterranean aqueducts tour</strong> from £21 takes you under the fountain into the ancient water channels that still feed it, which is a genuinely strange thing to stand in. Rated 4.1 by 239 travellers, so a smaller sample than the headline tours, but a rare piece of access.</p>
+
+<p><a href="https://www.getyourguide.com/activity/-t1251833?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">Compare the Trevi Fountain and aqueducts tour from £21 &rarr;</a></p>
+
+<p>At the Colosseum, the equivalent is the <strong>hypogeum</strong>, the two-level tunnel system under the arena floor where animals and gladiators waited. It is sold as an optional upgrade on the Colosseum Arena, Forum and Hill tour from £115, rated 4.5 by 1,880 travellers. Expensive, and worth it only if underground Rome is the reason you came.</p>
+
+<p><a href="https://www.getyourguide.com/activity/-t582858?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_rome_tours" target="_blank" rel="noopener noreferrer sponsored" class="text-green-700 font-semibold hover:underline">See the Colosseum tour with optional underground from £115 &rarr;</a></p>
+
+<h2>The verdict</h2>
+
+<p>For most visitors, the papal tombs under St Peter's are the right call: £10 for pre-reserved entry, or £16 for the guided version with the dome climb, in a place you are already going. Book an Appian Way catacombs tour only if the early Christian tunnels are a specific goal of your trip, and book it on operator reviews rather than on the word catacombs in the title, since the sites are the same for everyone and the guiding and transport are what vary. And if the pull is underground Rome rather than burial sites in particular, the Trevi aqueducts at £21 give you more of that feeling per pound than anything else in the centre.</p>
+
+<p>One last thing, whichever you choose: the churches and the Basilica enforce a dress code, shoulders and knees covered. It applies underground too, and no ticket gets you past it.</p>`,
+    relatedTourSlugs: [
+      'st-peters-basilica-pre-reserved-ticket-pope-catacombs',
+      'vatican-st-peters-basilica-dome-climb-and-papal-tombs-tour',
+      'trevi-fountain-subterranean-aqueducts-tour',
+      'colosseum-arena-forum-and-hill-tour-optional-underground',
+    ],
+    relatedBlogSlugs: [
+      'vatican-vs-st-peters-basilica-which-tour',
+      'is-a-vatican-museums-tour-worth-it',
+      'how-to-skip-the-line-in-rome',
+    ],
+    faqs: [
+      {
+        question: 'Are the Rome catacombs worth visiting?',
+        answer:
+          'The Appian Way catacombs are worth it if early Christian history is a specific reason for your trip, since they are the real burial tunnels and can only be seen on a guided tour. For most visitors the papal tombs under St Peter’s Basilica, from £10 with pre-reserved entry, deliver more for far less effort because you are already going there.',
+      },
+      {
+        question: 'Can you visit the Rome catacombs without a guided tour?',
+        answer:
+          'No. Every one of the main catacombs on the Appian Way admits visitors only in a guided group with an official guide. That is an access rule rather than an upsell, so any listing promising unguided entry is not describing the real site.',
+      },
+      {
+        question: 'What is the difference between the Rome catacombs and the Vatican catacombs?',
+        answer:
+          'They are different sites. The Rome catacombs are early Christian burial tunnels on the Appian Way, outside the centre. The so-called Vatican catacombs are the Vatican Grottoes beneath St Peter’s Basilica, where the popes are buried, reachable on a £10 pre-reserved ticket or a £16 guided dome and papal tombs tour. The deeper Vatican Necropolis is a third site, booked separately through the Vatican Excavations Office.',
+      },
+      {
+        question: 'How much does a Rome catacombs tour cost?',
+        answer:
+          'Entry to the Appian Way catacombs is inexpensive on its own; the cost of a tour is mostly the guide and the transport out to the Via Appia, so prices vary widely by operator. At the Vatican, the papal tombs are covered by a £10 pre-reserved Basilica ticket or a £16 guided tour that adds the dome climb.',
+      },
+      {
+        question: 'Which catacombs in Rome are the best to visit?',
+        answer:
+          'San Callisto is the largest and the most visited, San Sebastiano is the easiest to combine with the rest of the Appian Way, and Domitilla is the one with an underground basilica. Each closes one day a week and the closure days differ, so check the specific site before you travel out there.',
+      },
+    ],
+    publishedDate: '2026-07-28',
+    updatedDate: '2026-07-28',
   },
 ];
 

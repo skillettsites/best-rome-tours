@@ -94,6 +94,24 @@ export default function Top10Page() {
             confirmation and free cancellation on most options. Tap any image or the Book Now button to check live prices
             and availability.
           </p>
+          <p className="mt-4 text-lg text-gray-600">
+            The ranking is built on the full 2025 review record for each tour, the star rating and the verified review
+            count travellers left across the whole season, then updated for {YEAR} prices and availability. That is
+            deliberate: a single strong summer tells you far less about a tour than a year of it does. If you are
+            comparing the best {SITE_CITY} tours of 2025 against what to book now, this is the same underlying data,
+            brought up to date.
+          </p>
+          <p className="mt-3 text-gray-600">
+            Want the picks organised by trip type rather than by rank? Our{' '}
+            <Link href="/guides/best-rome-tours-2026" className="text-green-700 font-semibold hover:underline">
+              best {SITE_CITY} tours 2026
+            </Link>{' '}
+            guide groups the same experiences by who they suit, and the{' '}
+            <Link href="/guides/best-guided-tours-in-rome" className="text-green-700 font-semibold hover:underline">
+              best guided tours in {SITE_CITY}
+            </Link>{' '}
+            guide compares group, small-group and private formats.
+          </p>
           <p className="mt-3 text-sm text-gray-500">
             Updated {new Date(CONTENT_DATE).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })} &middot;{' '}
             {top10.length} tours ranked #1 to #{top10.length}

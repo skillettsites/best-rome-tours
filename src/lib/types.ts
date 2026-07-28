@@ -21,6 +21,9 @@ export interface Tour {
   affiliateUrl: string;
   faqs: FAQ[];
   relatedSlugs: string[];
+  // Optional answer-first capsule rendered under the tour description, used on
+  // pages that need to answer a specific search question in the searcher's words.
+  answerCapsule?: { heading: string; html: string };
 }
 
 export interface Category {
@@ -46,6 +49,8 @@ export interface Guide {
   faqs: FAQ[];
   publishedDate: string;
   updatedDate: string;
+  // Optional comparison table rendered after the named section heading.
+  comparison?: { afterHeading: string; tourSlugs: string[]; caption?: string };
 }
 
 export interface GuideSection {

@@ -35,6 +35,8 @@ const DECISION_VERDICTS: Record<string, string> = {
     'Verdict: go guided (from £63) on a first visit to make the art mean something; a skip-the-line entry ticket (from £28) is genuinely enough for confident museum-goers. Everyone should buy some form of fast-track.',
   'how-to-skip-the-line-in-rome':
     'Verdict: pre-book timed tickets for everything. The Vatican skip-the-line (from £28) and Colosseum timed combo (from £42) save the most time; St Peter’s (from £10) and Castel Sant’Angelo (from £15) mop up the rest.',
+  'which-rome-catacombs-tour-is-worth-it':
+    'Verdict: three different sites get called "catacombs". The Appian Way catacombs (San Callisto, San Sebastiano, Domitilla) are guided-entry only and sit outside the centre; the papal tombs under St Peter’s Basilica are the best-value underground visit at £10 pre-reserved entry or £16 guided with the dome climb; the Vatican Necropolis (Scavi) is a separate site booked through the Vatican Excavations Office.',
 };
 
 export function GET(): Response {

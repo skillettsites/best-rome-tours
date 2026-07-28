@@ -10,7 +10,48 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 import FAQ from '@/components/ui/FAQ';
 
-const categorySeoContent: Record<string, { paragraphs: string[]; relatedGuides: { slug: string; title: string }[] }> = {};
+// Answer-first blocks rendered below the tour grid. Each block is a real question
+// searchers ask, answered in the opening sentence, with an internal link to the
+// guide or decision post that covers it in full.
+type SeoBlock = { heading: string; html: string };
+const categorySeoBlocks: Record<string, SeoBlock[]> = {
+  'skip-the-line': [
+    {
+      heading: 'Combo tours: are they worth it?',
+      html: `<p>Yes in peak season, and the maths is simple. A Rome skip-the-line combo tour bundles neighbouring sites onto one ticket with one guide, so instead of buying the Colosseum on its own you get the Colosseum, the Roman Forum and Palatine Hill together from £42. The Vatican equivalent threads the Museums, the Sistine Chapel and St Peter's Basilica into a single skip-the-line route from £51, using the internal passage between the Sistine Chapel and the Basilica so you never rejoin the outdoor security line.</p>
+<p>The premium over a plain timed ticket is usually small, and the queues it saves are not: the Colosseum standby line regularly runs to ninety minutes in July, with no shade. The full breakdown, including when a cheaper timed entry with an audio guide is the smarter buy, is in our guide to whether a <a href="/blog/rome-skip-the-line-combo-tour-worth-it">Rome skip-the-line combo tour</a> is worth it.</p>`,
+    },
+    {
+      heading: 'Private skip-the-line options in Rome',
+      html: `<p>Fully private skip-the-line tours exist in Rome, but they are the exception rather than the rule and they carry a real premium. In our ranked list the closest equivalents are small-group and VIP formats rather than one-to-one private guiding: the Colosseum with Arena Floor tours and ticket options from £107 runs a VIP arena visit in a group capped at ten, and the Rome VIP Private Golf Cart Experience from £37 is genuinely private, with a customised route, though it is a city sightseeing tour rather than a fast-track museum ticket.</p>
+<p>If your reason for wanting private is speed rather than exclusivity, a standard skip-the-line ticket already does most of the work, since the queue-jump is built into the ticket and not into the group size. Weigh it up in the <a href="/blog/rome-skip-the-line-combo-tour-worth-it">Rome skip-the-line combo tour</a> verdict, or read the practical, attraction-by-attraction walkthrough in our guide to <a href="/guides/skip-the-line-rome">skip-the-line tickets in Rome</a>.</p>`,
+    },
+  ],
+  'guided-tours': [
+    {
+      heading: 'How much does a guided tour of Rome cost?',
+      html: `<p>Guided tours in Rome start from around £21 for a budget group tour of the Colosseum, Roman Forum and Palatine Hill, sit at roughly £42 to £68 for the standard guided tours of the Colosseum and the Vatican, and rise to £107 to £115 for VIP small-group formats with arena floor or underground access. The guide is what you are paying for, and at the big sites it is the difference between a stone shell and a working arena.</p>
+<p>We compare group, small-group and private formats side by side, with prices and who each one suits, in our guide to the <a href="/guides/best-guided-tours-in-rome">best guided tours in Rome</a>.</p>`,
+    },
+  ],
+};
+
+const categorySeoContent: Record<string, { paragraphs: string[]; relatedGuides: { slug: string; title: string }[] }> = {
+  'guided-tours': {
+    paragraphs: [],
+    relatedGuides: [
+      { slug: 'best-guided-tours-in-rome', title: 'Best guided tours in Rome: group vs private vs small-group' },
+      { slug: 'best-walking-tours-rome-2026', title: 'Best walking tours in Rome' },
+    ],
+  },
+  'skip-the-line': {
+    paragraphs: [],
+    relatedGuides: [
+      { slug: 'skip-the-line-rome', title: 'How to skip the line in Rome: tickets and tips' },
+      { slug: 'best-rome-tours-2026', title: 'Best Rome tours in 2026: top-rated picks' },
+    ],
+  },
+};
 
 export function generateStaticParams() {
   return categories.map((cat) => ({ slug: cat.slug }));
@@ -81,6 +122,21 @@ export default async function CategoryPage({ params }: { params: Params }) {
           ))}
         </div>
 
+        {/* Answer-first blocks: combo, private, cost */}
+        {categorySeoBlocks[category.slug] && (
+          <section className="mt-12 space-y-8">
+            {categorySeoBlocks[category.slug].map((block) => (
+              <div key={block.heading} className="rounded-xl border border-gray-200 bg-gray-50 p-6">
+                <h2 className="text-2xl font-bold text-gray-900 mb-3">{block.heading}</h2>
+                <div
+                  className="text-gray-700 leading-relaxed space-y-3 [&_a]:text-green-700 [&_a]:font-medium [&_a:hover]:underline"
+                  dangerouslySetInnerHTML={{ __html: block.html }}
+                />
+              </div>
+            ))}
+          </section>
+        )}
+
         <FAQ faqs={category.faqs} />
 
         {/* Other Categories */}
@@ -108,12 +164,16 @@ export default async function CategoryPage({ params }: { params: Params }) {
         {/* SEO Content Section */}
         {categorySeoContent[category.slug] && (
           <section className="mt-12 border-t border-gray-200 pt-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">About {category.title} in {SITE_CITY}</h2>
-            <div className="prose max-w-none text-gray-700 space-y-4">
-              {categorySeoContent[category.slug].paragraphs.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-            </div>
+            {categorySeoContent[category.slug].paragraphs.length > 0 && (
+              <>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">About {category.title} in {SITE_CITY}</h2>
+                <div className="prose max-w-none text-gray-700 space-y-4">
+                  {categorySeoContent[category.slug].paragraphs.map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+                </div>
+              </>
+            )}
 
             {categorySeoContent[category.slug].relatedGuides.length > 0 && (
               <div className="mt-8">

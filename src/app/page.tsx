@@ -26,9 +26,12 @@ const decisionGuideSlugs = [
   'is-the-colosseum-tour-worth-it',
   'colosseum-vs-vatican-which-to-do-first',
   'best-colosseum-ticket-which-tour-to-book',
+  'colosseum-arena-floor-vs-underground-tour',
   'how-to-skip-the-line-in-rome',
   'is-a-vatican-museums-tour-worth-it',
+  'vatican-vs-st-peters-basilica-which-tour',
   'rome-skip-the-line-combo-tour-worth-it',
+  'which-rome-catacombs-tour-is-worth-it',
 ];
 const decisionGuides = decisionGuideSlugs
   .map((slug) => blogPosts.find((p) => p.slug === slug))

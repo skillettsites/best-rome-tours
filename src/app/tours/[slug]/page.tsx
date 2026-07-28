@@ -23,6 +23,12 @@ import RevealOnScroll from '@/components/ds/RevealOnScroll';
 import StickyBookingBar from '@/components/ds/StickyBookingBar';
 
 const categoryGuideMap: Record<string, string[]> = {
+  // Rome's live category slugs. Without these the "More Rome guides" block never
+  // rendered on any tour page, so the guides layer had almost no inbound links.
+  'guided-tours': ['best-guided-tours-in-rome', 'best-walking-tours-rome-2026', 'best-rome-tours-2026'],
+  'skip-the-line': ['skip-the-line-rome', 'best-rome-tours-2026', 'rome-tours-on-a-budget'],
+  'food-drink': ['best-rome-tours-2026', 'first-time-in-rome', 'rome-tours-on-a-budget'],
+  'top-attractions': ['best-guided-tours-in-rome', 'first-time-in-rome', 'best-rome-tours-2026'],
   landmarks: ['first-time-visiting-rome', 'rome-3-day-itinerary', 'best-walking-tours-rome-2026'],
   'river-cruises': ['bus-tour-vs-boat-tour-rome', 'rome-tours-for-couples', 'rome-3-day-itinerary'],
   'day-trips': ['best-day-trips-from-rome', 'first-time-visiting-rome', 'rome-3-day-itinerary'],
@@ -171,6 +177,17 @@ export default async function TourPage({ params }: { params: Params }) {
             <section>
               <p className="text-[17px] text-on-surface leading-relaxed">{tour.description}</p>
             </section>
+
+            {/* Answer capsule: answers the question searchers actually ask about this tour */}
+            {tour.answerCapsule && (
+              <section className="rounded-card-lg border border-border bg-primary-soft/40 p-6">
+                <h2 className="text-xl font-semibold text-on-surface mb-3">{tour.answerCapsule.heading}</h2>
+                <div
+                  className="guide-content text-[15px] text-on-surface-2 leading-relaxed [&_a]:text-primary [&_a]:font-medium [&_a:hover]:underline [&_p+p]:mt-3"
+                  dangerouslySetInnerHTML={{ __html: tour.answerCapsule.html }}
+                />
+              </section>
+            )}
 
             {/* Highlights */}
             <section>

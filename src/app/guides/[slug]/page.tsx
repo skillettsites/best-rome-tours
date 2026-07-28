@@ -12,6 +12,7 @@ import FAQ from '@/components/ui/FAQ';
 import TourCard from '@/components/ui/TourCard';
 import InlineTourCTA from '@/components/ui/InlineTourCTA';
 import StickyBookingBar from '@/components/ds/StickyBookingBar';
+import ComparisonTable from '@/components/ds/ComparisonTable';
 
 export function generateStaticParams() {
   return guides.map((guide) => ({ slug: guide.slug }));
@@ -43,6 +44,10 @@ export default async function GuidePage({ params }: { params: Params }) {
   if (!guide) notFound();
 
   const relatedTours = guide.relatedTourSlugs
+    .map((s) => getTourBySlug(s))
+    .filter((t): t is NonNullable<typeof t> => t !== undefined);
+
+  const comparisonTours = (guide.comparison?.tourSlugs ?? [])
     .map((s) => getTourBySlug(s))
     .filter((t): t is NonNullable<typeof t> => t !== undefined);
 
@@ -150,6 +155,14 @@ export default async function GuidePage({ params }: { params: Params }) {
                     <h2>{section.heading}</h2>
                     <div dangerouslySetInnerHTML={{ __html: section.content }} />
                   </section>
+                  {guide.comparison?.afterHeading === section.heading && comparisonTours.length > 0 && (
+                    <div className="my-8 not-prose">
+                      <ComparisonTable tours={comparisonTours} trackingVariant={`guide-${guide.slug}`} />
+                      {guide.comparison.caption && (
+                        <p className="mt-3 text-sm text-gray-500">{guide.comparison.caption}</p>
+                      )}
+                    </div>
+                  )}
                   {ctaTours.length > 0 && <InlineTourCTA tours={ctaTours} />}
                 </div>
               );

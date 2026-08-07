@@ -6,7 +6,10 @@ export const GYG_PARTNER_ID = 'LPT26IL';
 export const GYG_CAMPAIGN = 'best_rome_tours';
 export const GYG_LOCATION_ID = '33';
 export const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-VNSGRLFJ4J';
-export const CONTENT_DATE = '2026-07-28';
+export const CONTENT_DATE = '2026-08-07';
+// The date every tour price, rating and review count was last re-verified
+// against live GetYourGuide data. Only move this when that check is actually rerun.
+export const DATA_CHECKED = '2026-08-07';
 
 // Direct link to this city's full tour catalogue on GetYourGuide (partner-attributed).
 // Used by the "browse all tours" CTAs to send traffic straight to GYG.

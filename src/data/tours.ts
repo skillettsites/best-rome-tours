@@ -240,7 +240,7 @@ export const tours: Tour[] = [
     metaDescription: 'Book Vatican, Sistine Chapel & St. Peter\'s Skip-the-Line Tour in Rome. Instant confirmation, free cancellation on most options. Rated 4.6★ by 10,609 travellers.',
     description: 'Skip the line of the Vatican Museums, Sistine Chapel, and St. Peter\'s Basilica on a guided tour.',
     excerpt: 'Skip the line of the Vatican Museums, Sistine Chapel, and St. Peter\'s Basilica on a guided tour.',
-    price: 42,
+    price: 60,
     currency: 'GBP',
     duration: 'Varies',
     rating: 4.6,

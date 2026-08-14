@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { tours } from '@/data/tours';
 import { blogPosts } from '@/data/blog-posts';
 import { SITE_URL, SITE_CITY, CONTENT_DATE } from '@/lib/constants';
+import { displayCopy } from '@/lib/currency';
 import { breadcrumbSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 
@@ -74,8 +75,8 @@ export default function BlogIndex() {
                 <span className="absolute top-3 left-3 rounded-full bg-green-600 px-3 py-1 text-xs font-bold text-white shadow">{post.tag}</span>
               </div>
               <div className="p-5">
-                <h2 className="text-xl font-bold text-gray-900 group-hover:text-green-700 transition-colors">{post.title}</h2>
-                <p className="mt-2 text-sm text-gray-600">{post.excerpt}</p>
+                <h2 className="text-xl font-bold text-gray-900 group-hover:text-green-700 transition-colors">{displayCopy(post.title)}</h2>
+                <p className="mt-2 text-sm text-gray-600">{displayCopy(post.excerpt)}</p>
                 <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-green-700">
                   Read more
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>

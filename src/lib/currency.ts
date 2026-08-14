@@ -63,3 +63,11 @@ export function formatPrice(
   const value = convertAmount(amount, resolveCurrency(fromCode), to, rates);
   return `${currencySymbol(to)}${value.toLocaleString('en-GB')}`;
 }
+
+// Rewrite leftover catalogue £ amounts in copy so the viewed-site currency wins
+// without changing stored tour.price / tour.currency fields.
+export function displayCopy(text: string): string {
+  return text
+    .replace(/&pound;(\d+(?:,\d{3})*(?:\.\d+)?)/g, (_, raw) => formatPrice(Number(String(raw).replace(/,/g, '')), 'GBP'))
+    .replace(/£(\d+(?:,\d{3})*(?:\.\d+)?)/g, (_, raw) => formatPrice(Number(String(raw).replace(/,/g, '')), 'GBP'));
+}

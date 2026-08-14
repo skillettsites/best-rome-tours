@@ -6,6 +6,7 @@ import { categories } from '@/data/categories';
 import { blogPosts } from '@/data/blog-posts';
 import { SITE_CITY, GYG_PARTNER_ID, GYG_LOCATION_ID, GYG_CITY_URL, SITE_CURRENCY } from '@/lib/constants';
 import { trustStats } from '@/lib/trust';
+import { displayCopy } from '@/lib/currency';
 
 import SectionHeader from '@/components/ds/SectionHeader';
 import TourCard from '@/components/ds/TourCard';
@@ -192,10 +193,10 @@ export default function HomePage() {
                     className="group flex h-full flex-col rounded-card-lg border border-border bg-surface p-6 transition-colors hover:border-primary"
                   >
                     <h3 className="text-lg font-semibold text-on-surface group-hover:text-primary transition-colors">
-                      {post.title}
+                      {displayCopy(post.title)}
                     </h3>
                     <p className="mt-2 text-sm text-on-surface-2 leading-relaxed flex-1">
-                      {post.excerpt}
+                      {displayCopy(post.excerpt)}
                     </p>
                     <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
                       Read the guide

@@ -6,6 +6,7 @@ import { blogPosts, getBlogPostBySlug } from '@/data/blog-posts';
 import { getTourBySlug } from '@/data/tours';
 import { blogArticleSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { SITE_URL, SITE_CITY } from '@/lib/constants';
+import { displayCopy } from '@/lib/currency';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import FAQ from '@/components/ui/FAQ';
 import InlineTourCTA from '@/components/ui/InlineTourCTA';
@@ -24,20 +25,20 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 
   const url = `${SITE_URL}/blog/${post.slug}`;
   return {
-    title: post.metaTitle,
-    description: post.metaDescription,
+    title: displayCopy(post.metaTitle),
+    description: displayCopy(post.metaDescription),
     alternates: { canonical: url },
     openGraph: {
-      title: post.metaTitle,
-      description: post.metaDescription,
+      title: displayCopy(post.metaTitle),
+      description: displayCopy(post.metaDescription),
       url,
       type: 'article',
       images: [{ url: post.heroImage, alt: post.heroImageAlt }],
     },
     twitter: {
       card: 'summary_large_image',
-      title: post.metaTitle,
-      description: post.metaDescription,
+      title: displayCopy(post.metaTitle),
+      description: displayCopy(post.metaDescription),
       images: [post.heroImage],
     },
   };
@@ -87,8 +88,8 @@ export default async function BlogPostPage({ params }: { params: Params }) {
         />
 
         <header className="mt-4 mb-8">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">{post.title}</h1>
-          <p className="mt-4 text-lg text-gray-600 leading-relaxed">{post.excerpt}</p>
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">{displayCopy(post.title)}</h1>
+          <p className="mt-4 text-lg text-gray-600 leading-relaxed">{displayCopy(post.excerpt)}</p>
           <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-gray-500">
             <span>
               Published{' '}
@@ -125,7 +126,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
         {relatedTours.length > 0 && <InlineTourCTA tours={relatedTours.slice(0, 1)} />}
 
         {/* Blog content */}
-        <div className="guide-content" dangerouslySetInnerHTML={{ __html: post.content }} />
+        <div className="guide-content" dangerouslySetInnerHTML={{ __html: displayCopy(post.content) }} />
 
         {/* Recommended tours referenced in this post */}
         {relatedTours.length > 0 && (
@@ -146,9 +147,9 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               {relatedPosts.map((p) => (
                 <li key={p.slug}>
                   <Link href={`/blog/${p.slug}`} className="text-green-700 font-semibold hover:underline">
-                    {p.title}
+                    {displayCopy(p.title)}
                   </Link>
-                  <p className="text-sm text-gray-500 mt-0.5">{p.excerpt}</p>
+                  <p className="text-sm text-gray-500 mt-0.5">{displayCopy(p.excerpt)}</p>
                 </li>
               ))}
             </ul>

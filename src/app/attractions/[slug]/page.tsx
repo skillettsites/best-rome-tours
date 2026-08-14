@@ -7,6 +7,7 @@ import { getTourBySlug } from '@/data/tours';
 import { getBlogPostBySlug } from '@/data/blog-posts';
 import { itemListSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { SITE_URL, SITE_CITY } from '@/lib/constants';
+import { displayCopy } from '@/lib/currency';
 import TourCard from '@/components/ui/TourCard';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
@@ -24,10 +25,10 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const a = getAttractionBySlug(slug);
   if (!a) return {};
   return {
-    title: a.metaTitle,
-    description: a.metaDescription,
+    title: displayCopy(a.metaTitle),
+    description: displayCopy(a.metaDescription),
     alternates: { canonical: `${SITE_URL}/attractions/${a.slug}` },
-    openGraph: { title: a.metaTitle, description: a.metaDescription, url: `${SITE_URL}/attractions/${a.slug}`, type: 'website' },
+    openGraph: { title: displayCopy(a.metaTitle), description: displayCopy(a.metaDescription), url: `${SITE_URL}/attractions/${a.slug}`, type: 'website' },
   };
 }
 
@@ -41,9 +42,9 @@ export default async function AttractionPage({ params }: { params: Params }) {
     .map((s) => getBlogPostBySlug(s))
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
   const top = tours[0];
-  const cheapest = tours.length ? tours.reduce((min, t) => (t.price < min.price ? t : min)) : undefined;
-  const fromPrice = cheapest?.price;
-  const fromCurrency = cheapest?.currency;
+  const pricedTour = top
+    ? tours.reduce((min, t) => (t.price < min.price ? t : min), top)
+    : undefined;
 
   return (
     <>
@@ -63,17 +64,17 @@ export default async function AttractionPage({ params }: { params: Params }) {
         <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Attractions', href: '/attractions' }, { label: a.name }]} />
 
         <div className="mt-4 max-w-3xl">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">{a.title}</h1>
-          <p className="mt-3 text-lg text-gray-600">{a.intro}</p>
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">{displayCopy(a.title)}</h1>
+          <p className="mt-3 text-lg text-gray-600">{displayCopy(a.intro)}</p>
           <div className="mt-4 flex flex-wrap items-center gap-3">
-            {top && (
+            {pricedTour && (
               <TrackedGYGLink
-                href={top.affiliateUrl}
+                href={pricedTour.affiliateUrl}
                 tourName={a.name}
                 section="attraction-hero-cta"
                 className="inline-flex items-center gap-2 rounded-xl bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-3 shadow-sm transition-colors"
               >
-                Book {a.name} tickets from <LocalPrice amount={fromPrice ?? top.price} currency={fromCurrency ?? top.currency} />
+                Book {a.name} tickets from <LocalPrice amount={pricedTour.price} currency={pricedTour.currency} />
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
               </TrackedGYGLink>
             )}
@@ -100,9 +101,9 @@ export default async function AttractionPage({ params }: { params: Params }) {
               {relatedPosts.map((p) => (
                 <li key={p.slug}>
                   <Link href={`/blog/${p.slug}`} className="text-green-700 font-semibold hover:underline">
-                    {p.title}
+                    {displayCopy(p.title)}
                   </Link>
-                  <p className="text-sm text-gray-500 mt-0.5">{p.excerpt}</p>
+                  <p className="text-sm text-gray-500 mt-0.5">{displayCopy(p.excerpt)}</p>
                 </li>
               ))}
             </ul>

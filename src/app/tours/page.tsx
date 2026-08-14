@@ -10,6 +10,7 @@ import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 import LocalPrice from '@/components/LocalPrice';
 import { SITE_URL } from '@/lib/constants';
 import { trustStats } from '@/lib/trust';
+import { displayCopy } from '@/lib/currency';
 
 export const metadata: Metadata = {
   title: 'All Rome Tours & Attractions 2026 | Book Online',
@@ -90,8 +91,8 @@ export default function ToursPage() {
                 href={`/guides/${guide.slug}`}
                 className="block rounded-lg border border-gray-200 bg-white p-4 hover:border-green-300 hover:shadow-sm transition-all"
               >
-                <h3 className="font-medium text-gray-900 text-sm">{guide.title}</h3>
-                <p className="text-xs text-gray-500 mt-1 line-clamp-2">{guide.excerpt}</p>
+                <h3 className="font-medium text-gray-900 text-sm">{displayCopy(guide.title)}</h3>
+                <p className="text-xs text-gray-500 mt-1 line-clamp-2">{displayCopy(guide.excerpt)}</p>
               </Link>
             ))}
           </div>

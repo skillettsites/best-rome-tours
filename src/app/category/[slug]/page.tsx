@@ -5,7 +5,7 @@ import { categories, getCategoryBySlug } from '@/data/categories';
 import { getToursByCategory } from '@/data/tours';
 import { categorySchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { SITE_URL, SITE_CITY } from '@/lib/constants';
-import { formatPrice } from '@/lib/currency';
+import { formatPrice, displayCopy } from '@/lib/currency';
 import TourCard from '@/components/ui/TourCard';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
@@ -132,7 +132,7 @@ export default async function CategoryPage({ params }: { params: Params }) {
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">{block.heading}</h2>
                 <div
                   className="text-gray-700 leading-relaxed space-y-3 [&_a]:text-green-700 [&_a]:font-medium [&_a:hover]:underline"
-                  dangerouslySetInnerHTML={{ __html: block.html }}
+                  dangerouslySetInnerHTML={{ __html: displayCopy(block.html) }}
                 />
               </div>
             ))}

@@ -7,6 +7,7 @@ import { guides } from '@/data/guides';
 import { blogPosts } from '@/data/blog-posts';
 import { tourSchema, touristTripSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { SITE_URL, DATA_CHECKED } from '@/lib/constants';
+import { displayCopy } from '@/lib/currency';
 import { TOP_CONVERTER_BY_DESTINATION } from '@/lib/trust';
 
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
@@ -186,7 +187,7 @@ export default async function TourPage({ params }: { params: Params }) {
                 <h2 className="text-xl font-semibold text-on-surface mb-3">{tour.answerCapsule.heading}</h2>
                 <div
                   className="guide-content text-[15px] text-on-surface-2 leading-relaxed [&_a]:text-primary [&_a]:font-medium [&_a:hover]:underline [&_p+p]:mt-3"
-                  dangerouslySetInnerHTML={{ __html: tour.answerCapsule.html }}
+                  dangerouslySetInnerHTML={{ __html: displayCopy(tour.answerCapsule.html) }}
                 />
               </section>
             )}
@@ -368,8 +369,8 @@ export default async function TourPage({ params }: { params: Params }) {
                 {relevantGuides.map((guide) => (
                   <li key={guide.slug}>
                     <Link href={`/guides/${guide.slug}`} className="block group">
-                      <span className="text-primary font-medium group-hover:underline">{guide.title}</span>
-                      <p className="text-sm text-on-surface-2 mt-0.5">{guide.excerpt}</p>
+                      <span className="text-primary font-medium group-hover:underline">{displayCopy(guide.title)}</span>
+                      <p className="text-sm text-on-surface-2 mt-0.5">{displayCopy(guide.excerpt)}</p>
                     </Link>
                   </li>
                 ))}
@@ -390,8 +391,8 @@ export default async function TourPage({ params }: { params: Params }) {
                 {relatedDecisionGuides.map((post) => (
                   <li key={post.slug}>
                     <Link href={`/blog/${post.slug}`} className="block group">
-                      <span className="text-primary font-medium group-hover:underline">{post.title}</span>
-                      <p className="text-sm text-on-surface-2 mt-0.5">{post.excerpt}</p>
+                      <span className="text-primary font-medium group-hover:underline">{displayCopy(post.title)}</span>
+                      <p className="text-sm text-on-surface-2 mt-0.5">{displayCopy(post.excerpt)}</p>
                     </Link>
                   </li>
                 ))}

@@ -1,5 +1,5 @@
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION, DATA_CHECKED, SITE_CURRENCY } from './constants';
-import { convertAmount, FALLBACK_RATES } from './currency';
+import { convertAmount, FALLBACK_RATES, displayCopy } from './currency';
 import { Tour, Category, Guide, FAQ, BlogPost } from './types';
 
 export function websiteSchema() {
@@ -140,10 +140,10 @@ export function faqSchema(faqs: FAQ[]) {
     '@type': 'FAQPage',
     mainEntity: faqs.map((faq) => ({
       '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer,
+        name: displayCopy(faq.question),
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: displayCopy(faq.answer),
       },
     })),
   };
@@ -153,8 +153,8 @@ export function articleSchema(guide: Guide) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: guide.title,
-    description: guide.metaDescription,
+    headline: displayCopy(guide.title),
+    description: displayCopy(guide.metaDescription),
     url: `${SITE_URL}/guides/${guide.slug}`,
     datePublished: guide.publishedDate,
     dateModified: guide.updatedDate,
@@ -175,8 +175,8 @@ export function blogArticleSchema(post: BlogPost) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: post.title,
-    description: post.metaDescription,
+    headline: displayCopy(post.title),
+    description: displayCopy(post.metaDescription),
     image: post.heroImage,
     url: `${SITE_URL}/blog/${post.slug}`,
     datePublished: post.publishedDate,
@@ -198,8 +198,8 @@ export function categorySchema(category: Category) {
   return {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: category.title,
-    description: category.description,
+    name: displayCopy(category.title),
+    description: displayCopy(category.description),
     url: `${SITE_URL}/category/${category.slug}`,
   };
 }

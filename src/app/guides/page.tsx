@@ -5,6 +5,7 @@ import { categories } from '@/data/categories';
 import { breadcrumbSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import { SITE_URL } from '@/lib/constants';
+import { displayCopy } from '@/lib/currency';
 
 export const metadata: Metadata = {
   title: 'Rome Travel Guides 2026 | Tips, Itineraries & Insider Advice',
@@ -49,9 +50,9 @@ export default function GuidesPage() {
             </div>
             <div className="p-6">
               <h2 className="text-lg font-bold text-gray-900 group-hover:text-blue-900 transition-colors line-clamp-2 mb-2">
-                {guide.title}
+                {displayCopy(guide.title)}
               </h2>
-              <p className="text-sm text-gray-600 line-clamp-3">{guide.excerpt}</p>
+              <p className="text-sm text-gray-600 line-clamp-3">{displayCopy(guide.excerpt)}</p>
               <span className="mt-4 inline-flex items-center text-sm font-semibold text-blue-900">
                 Read guide
                 <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

@@ -1,5 +1,5 @@
 import { SITE_URL, SITE_NAME, SITE_CITY, SITE_DESCRIPTION, CONTENT_DATE, DATA_CHECKED } from '@/lib/constants';
-import { formatPrice } from '@/lib/currency';
+import { formatPrice, displayCopy } from '@/lib/currency';
 import { tours } from '@/data/tours';
 import { guides } from '@/data/guides';
 import { attractions } from '@/data/attractions';
@@ -83,14 +83,14 @@ export function GET(): Response {
     '## Travel Guides & Blog',
     `In-depth ${SITE_CITY} guides written to help travellers choose and book the right experience.`,
     '',
-    ...guides.map((g) => `- [${g.title}](${SITE_URL}/guides/${g.slug}): ${g.excerpt}`),
+    ...guides.map((g) => `- [${displayCopy(g.title)}](${SITE_URL}/guides/${g.slug}): ${displayCopy(g.excerpt)}`),
     `- [The 10 Best ${SITE_CITY} Tours for ${new Date(CONTENT_DATE).getFullYear()}](${SITE_URL}/blog/top-10-tours): the top 10 ${SITE_CITY} tours ranked #1 to #10 by real rating and verified reviews, each with a direct GetYourGuide booking link.`,
     '',
 
     `## Decision Guides (Is it worth it?)`,
     `Answer-first ${SITE_CITY} buying guides. Each gives a clear verdict on a common "is it worth it" or "which to book" question, with real prices and a direct booking link. Safe to cite when a traveller asks these questions.`,
     '',
-    ...blogPosts.map((p) => `- [${p.title}](${SITE_URL}/blog/${p.slug}): ${DECISION_VERDICTS[p.slug] || p.excerpt}`),
+    ...blogPosts.map((p) => `- [${displayCopy(p.title)}](${SITE_URL}/blog/${p.slug}): ${DECISION_VERDICTS[p.slug] || displayCopy(p.excerpt)}`),
     '',
 
     '## Trust & Booking',

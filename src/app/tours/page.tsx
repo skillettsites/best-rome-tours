@@ -7,7 +7,9 @@ import { itemListSchema, breadcrumbSchema } from '@/lib/schema';
 import TourCard from '@/components/ui/TourCard';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
+import LocalPrice from '@/components/LocalPrice';
 import { SITE_URL } from '@/lib/constants';
+import { trustStats } from '@/lib/trust';
 
 export const metadata: Metadata = {
   title: 'All Rome Tours & Attractions 2026 | Book Online',
@@ -50,7 +52,7 @@ export default function ToursPage() {
             Discover {tours.length} hand-picked tours and attractions in Rome. Book online for the best prices and skip-the-line entry.
           </p>
           <p className="mt-3 text-gray-600 max-w-3xl">
-            From iconic landmarks to unforgettable day trips, we have selected the highest-rated experiences with verified reviews and instant confirmation. Prices start from just &pound;17 per person, with free cancellation on most bookings.
+            From iconic landmarks to unforgettable day trips, we have selected the highest-rated experiences with verified reviews and instant confirmation. Prices start from just <LocalPrice amount={trustStats.minPrice} currency={trustStats.minPriceCurrency} /> per person, with free cancellation on most bookings.
           </p>
         </div>
 

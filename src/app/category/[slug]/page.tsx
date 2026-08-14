@@ -5,6 +5,7 @@ import { categories, getCategoryBySlug } from '@/data/categories';
 import { getToursByCategory } from '@/data/tours';
 import { categorySchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { SITE_URL, SITE_CITY } from '@/lib/constants';
+import { formatPrice } from '@/lib/currency';
 import TourCard from '@/components/ui/TourCard';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
@@ -14,23 +15,24 @@ import FAQ from '@/components/ui/FAQ';
 // searchers ask, answered in the opening sentence, with an internal link to the
 // guide or decision post that covers it in full.
 type SeoBlock = { heading: string; html: string };
+const gbp = (amount: number) => formatPrice(amount, 'GBP');
 const categorySeoBlocks: Record<string, SeoBlock[]> = {
   'skip-the-line': [
     {
       heading: 'Combo tours: are they worth it?',
-      html: `<p>Yes in peak season, and the maths is simple. A Rome skip-the-line combo tour bundles neighbouring sites onto one ticket with one guide, so instead of buying the Colosseum on its own you get the Colosseum, the Roman Forum and Palatine Hill together from £42. The Vatican equivalent threads the Museums, the Sistine Chapel and St Peter's Basilica into a single skip-the-line route from £51, using the internal passage between the Sistine Chapel and the Basilica so you never rejoin the outdoor security line.</p>
+      html: `<p>Yes in peak season, and the maths is simple. A Rome skip-the-line combo tour bundles neighbouring sites onto one ticket with one guide, so instead of buying the Colosseum on its own you get the Colosseum, the Roman Forum and Palatine Hill together from ${gbp(42)}. The Vatican equivalent threads the Museums, the Sistine Chapel and St Peter's Basilica into a single skip-the-line route from ${gbp(51)}, using the internal passage between the Sistine Chapel and the Basilica so you never rejoin the outdoor security line.</p>
 <p>The premium over a plain timed ticket is usually small, and the queues it saves are not: the Colosseum standby line regularly runs to ninety minutes in July, with no shade. The full breakdown, including when a cheaper timed entry with an audio guide is the smarter buy, is in our guide to whether a <a href="/blog/rome-skip-the-line-combo-tour-worth-it">Rome skip-the-line combo tour</a> is worth it.</p>`,
     },
     {
       heading: 'Private skip-the-line options in Rome',
-      html: `<p>Fully private skip-the-line tours exist in Rome, but they are the exception rather than the rule and they carry a real premium. In our ranked list the closest equivalents are small-group and VIP formats rather than one-to-one private guiding: the Colosseum with Arena Floor tours and ticket options from £107 runs a VIP arena visit in a group capped at ten, and the Rome VIP Private Golf Cart Experience from £68 is genuinely private, with a customised route, though it is a city sightseeing tour rather than a fast-track museum ticket.</p>
+      html: `<p>Fully private skip-the-line tours exist in Rome, but they are the exception rather than the rule and they carry a real premium. In our ranked list the closest equivalents are small-group and VIP formats rather than one-to-one private guiding: the Colosseum with Arena Floor tours and ticket options from ${gbp(107)} runs a VIP arena visit in a group capped at ten, and the Rome VIP Private Golf Cart Experience from ${gbp(68)} is genuinely private, with a customised route, though it is a city sightseeing tour rather than a fast-track museum ticket.</p>
 <p>If your reason for wanting private is speed rather than exclusivity, a standard skip-the-line ticket already does most of the work, since the queue-jump is built into the ticket and not into the group size. Weigh it up in the <a href="/blog/rome-skip-the-line-combo-tour-worth-it">Rome skip-the-line combo tour</a> verdict, or read the practical, attraction-by-attraction walkthrough in our guide to <a href="/guides/skip-the-line-rome">skip-the-line tickets in Rome</a>.</p>`,
     },
   ],
   'guided-tours': [
     {
       heading: 'How much does a guided tour of Rome cost?',
-      html: `<p>Guided tours in Rome start from around £15 for a budget group tour of the Colosseum, Roman Forum and Palatine Hill, sit at roughly £42 to £59 for the standard guided tours of the Colosseum and the Vatican, and rise to £98 to £107 for VIP small-group formats with arena floor or underground access. The guide is what you are paying for, and at the big sites it is the difference between a stone shell and a working arena.</p>
+      html: `<p>Guided tours in Rome start from around ${gbp(15)} for a budget group tour of the Colosseum, Roman Forum and Palatine Hill, sit at roughly ${gbp(42)} to ${gbp(59)} for the standard guided tours of the Colosseum and the Vatican, and rise to ${gbp(98)} to ${gbp(107)} for VIP small-group formats with arena floor or underground access. The guide is what you are paying for, and at the big sites it is the difference between a stone shell and a working arena.</p>
 <p>We compare group, small-group and private formats side by side, with prices and who each one suits, in our guide to the <a href="/guides/best-guided-tours-in-rome">best guided tours in Rome</a>.</p>`,
     },
   ],

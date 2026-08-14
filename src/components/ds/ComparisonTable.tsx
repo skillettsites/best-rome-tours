@@ -1,5 +1,5 @@
+import LocalPrice from '@/components/LocalPrice';
 import TrackedGYGLink from '@/components/TrackedGYGLink';
-import { currencySymbol } from '@/lib/currency';
 
 interface ComparisonTour {
   slug: string;
@@ -24,10 +24,6 @@ const labels: Record<Row, string> = {
   cancellation: 'Free cancellation',
   bestFor: 'Best for',
 };
-
-function getSymbol(currency?: string): string {
-  return currencySymbol(currency);
-}
 
 export default function ComparisonTable({
   tours,
@@ -58,7 +54,7 @@ export default function ComparisonTable({
               {tours.map((tour) => (
                 <td key={tour.slug} className="px-5 py-3.5 text-center text-on-surface">
                   {row === 'price' && (
-                    <span className="font-display text-lg">{getSymbol(tour.currency)}{tour.price}</span>
+                    <span className="font-display text-lg"><LocalPrice amount={tour.price} currency={tour.currency} /></span>
                   )}
                   {row === 'duration' && tour.duration}
                   {row === 'rating' && (

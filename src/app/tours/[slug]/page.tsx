@@ -7,7 +7,6 @@ import { guides } from '@/data/guides';
 import { blogPosts } from '@/data/blog-posts';
 import { tourSchema, touristTripSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { SITE_URL, DATA_CHECKED } from '@/lib/constants';
-import { currencySymbol } from '@/lib/currency';
 import { TOP_CONVERTER_BY_DESTINATION } from '@/lib/trust';
 
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
@@ -127,9 +126,9 @@ export default async function TourPage({ params }: { params: Params }) {
 
       <StickyBookingBar
         label={tour.shortTitle}
-        sublabel={`From ${currencySymbol(tour.currency)}${tour.price} · Free cancellation`}
+        sublabel="Free cancellation"
         href={tour.affiliateUrl}
-        price={`${currencySymbol(tour.currency)}${tour.price}`}
+        price={<LocalPrice amount={tour.price} currency={tour.currency} />}
         ctaLabel="Book Now"
         external
       />

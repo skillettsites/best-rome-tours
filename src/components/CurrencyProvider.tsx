@@ -42,7 +42,9 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
     const country = (readCookie('country') || '').toUpperCase();
     const chosen = manual && CURRENCIES[manual] ? manual : (COUNTRY_TO_CUR[country] || SITE_CURRENCY);
     setCode(chosen);
-    // 2) load FX rates (cached 12h), else fallbacks. Base is the site default, not GBP.
+    // 2) load FX rates (cached 12h), else fallbacks. Base is the viewed-site
+    // currency (EUR on Rome). Stored tour.currency (often GBP) is converted from
+    // that table; it is never the display default.
     (async () => {
       let fetched: Record<string, number> | null = null;
       try {
@@ -60,6 +62,7 @@ export function CurrencyProvider({ children }: { children: ReactNode }) {
         } catch {}
       }
       if (fetched) setRates({ ...FALLBACK_RATES, ...fetched, [SITE_CURRENCY]: 1 });
+      else setRates({ ...FALLBACK_RATES, [SITE_CURRENCY]: 1 });
       setReady(true);
     })();
   }, []);

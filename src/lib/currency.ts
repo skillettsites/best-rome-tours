@@ -27,9 +27,12 @@ export const FALLBACK_RATES: Record<string, number> = Object.fromEntries(
   Object.entries(CURRENCIES).map(([code, meta]) => [code, meta.fallback]),
 );
 
+export function resolveCurrency(code?: string): string {
+  return code && CURRENCIES[code] ? code : SITE_CURRENCY;
+}
+
 export function currencySymbol(code?: string): string {
-  const resolved = code && CURRENCIES[code] ? code : SITE_CURRENCY;
-  return CURRENCIES[resolved].symbol;
+  return CURRENCIES[resolveCurrency(code)].symbol;
 }
 
 // rates are units of that currency per 1 SITE_CURRENCY.
@@ -39,9 +42,24 @@ export function convertAmount(
   toCode: string,
   rates: Record<string, number>,
 ): number {
-  if (fromCode === toCode) return Math.round(amount);
-  const fromRate = fromCode === SITE_CURRENCY ? 1 : rates[fromCode];
-  const toRate = toCode === SITE_CURRENCY ? 1 : rates[toCode];
+  const from = resolveCurrency(fromCode);
+  const to = resolveCurrency(toCode);
+  if (from === to) return Math.round(amount);
+  const fromRate = from === SITE_CURRENCY ? 1 : rates[from];
+  const toRate = to === SITE_CURRENCY ? 1 : rates[to];
   if (!fromRate || !toRate) return Math.round(amount);
   return Math.round((amount / fromRate) * toRate);
+}
+
+// Catalogue amount in the viewed-site currency (EUR on Rome). `fromCode` is the
+// stored tour.currency, used only as the FX source, never as the display default.
+export function formatPrice(
+  amount: number,
+  fromCode?: string,
+  toCode: string = SITE_CURRENCY,
+  rates: Record<string, number> = FALLBACK_RATES,
+): string {
+  const to = resolveCurrency(toCode);
+  const value = convertAmount(amount, resolveCurrency(fromCode), to, rates);
+  return `${currencySymbol(to)}${value.toLocaleString('en-GB')}`;
 }

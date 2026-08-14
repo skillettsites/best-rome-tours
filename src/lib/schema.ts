@@ -1,5 +1,6 @@
+import { SITE_NAME, SITE_URL, SITE_DESCRIPTION, DATA_CHECKED, SITE_CURRENCY } from './constants';
+import { convertAmount, FALLBACK_RATES } from './currency';
 import { Tour, Category, Guide, FAQ, BlogPost } from './types';
-import { SITE_NAME, SITE_URL, SITE_DESCRIPTION, DATA_CHECKED } from './constants';
 
 export function websiteSchema() {
   return {
@@ -63,8 +64,8 @@ export function tourSchema(tour: Tour) {
     },
     offers: {
       '@type': 'Offer',
-      price: tour.price,
-      priceCurrency: tour.currency,
+      price: convertAmount(tour.price, tour.currency, SITE_CURRENCY, FALLBACK_RATES),
+      priceCurrency: SITE_CURRENCY,
       availability: 'https://schema.org/InStock',
       url: tour.affiliateUrl,
       priceValidUntil: '2027-12-31',
@@ -84,8 +85,8 @@ export function touristTripSchema(tour: Tour) {
     touristType: tour.bestFor,
     offers: {
       '@type': 'Offer',
-      price: tour.price,
-      priceCurrency: tour.currency,
+      price: convertAmount(tour.price, tour.currency, SITE_CURRENCY, FALLBACK_RATES),
+      priceCurrency: SITE_CURRENCY,
       availability: 'https://schema.org/InStock',
       url: tour.affiliateUrl,
     },

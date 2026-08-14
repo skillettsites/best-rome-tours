@@ -2,11 +2,12 @@
 
 import { useCurrency } from '@/components/CurrencyProvider';
 import { SITE_CURRENCY } from '@/lib/constants';
-import { convertAmount, currencySymbol } from '@/lib/currency';
+import { convertAmount, currencySymbol, resolveCurrency } from '@/lib/currency';
 
-// Renders a catalogue amount in the visitor's currency (approx). Source currency is
-// tour.currency when provided, otherwise the site default. During SSR and before the
-// client resolves currency, it renders the source amount so static HTML stays stable.
+// Renders a catalogue amount in the viewed-site currency by default (EUR on Rome).
+// tour.currency is the FX source only. SSR and the first client paint convert with
+// fallback rates so static HTML is never the stored £ amount. Tooltips never name
+// the source currency, which is the Iceland leftover-title miss.
 export default function LocalPrice({
   amount,
   currency,
@@ -17,15 +18,24 @@ export default function LocalPrice({
   className?: string;
 }) {
   const { code, info, ready, rates } = useCurrency();
-  const from = currency && currency.length > 0 ? currency : SITE_CURRENCY;
-  const fromSymbol = currencySymbol(from);
-  if (!ready || code === from) {
-    return <span className={className}>{fromSymbol}{amount}</span>;
+  const from = resolveCurrency(currency);
+  const displayCode = ready ? resolveCurrency(code) : SITE_CURRENCY;
+  const displaySymbol = ready ? info.symbol : currencySymbol(SITE_CURRENCY);
+  const val = convertAmount(amount, from, displayCode, rates);
+  const converted = from !== displayCode;
+  const showApprox = converted && displayCode !== SITE_CURRENCY;
+
+  if (!showApprox) {
+    return (
+      <span className={className}>
+        {displaySymbol}{val.toLocaleString('en-GB')}
+      </span>
+    );
   }
-  const val = convertAmount(amount, from, code, rates);
+
   return (
-    <span className={className} title={`Approx, from ${fromSymbol}${amount}. Exact price shown on GetYourGuide.`}>
-      {'≈ '}{info.symbol}{val.toLocaleString('en-GB')}
+    <span className={className} title="Approximate conversion. Exact price shown on GetYourGuide.">
+      {'≈ '}{displaySymbol}{val.toLocaleString('en-GB')}
     </span>
   );
 }

@@ -39,7 +39,7 @@ export default function AttractionsIndex() {
         </div>
 
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-          {cards.map(({ a, top, count, from }) => (
+          {cards.map(({ a, top, count, from, fromCurrency }) => (
             <Link key={a.slug} href={`/attractions/${a.slug}`} className="group block rounded-2xl border border-gray-200 bg-white overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative aspect-[16/10] overflow-hidden bg-gray-100">
                 {top && <Image src={top.imageUrl} alt={a.name} fill className="object-cover group-hover:scale-[1.04] transition-transform duration-500" sizes="(max-width: 640px) 100vw, 400px" />}

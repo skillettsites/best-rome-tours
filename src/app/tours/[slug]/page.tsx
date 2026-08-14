@@ -7,6 +7,7 @@ import { guides } from '@/data/guides';
 import { blogPosts } from '@/data/blog-posts';
 import { tourSchema, touristTripSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { SITE_URL, DATA_CHECKED } from '@/lib/constants';
+import { currencySymbol } from '@/lib/currency';
 import { TOP_CONVERTER_BY_DESTINATION } from '@/lib/trust';
 
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
@@ -14,6 +15,7 @@ import FAQ from '@/components/ui/FAQ';
 import AvailabilityWidget from '@/components/ui/AvailabilityWidget';
 import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 import TrackedGYGLink from '@/components/TrackedGYGLink';
+import LocalPrice from '@/components/LocalPrice';
 
 import TourCard from '@/components/ds/TourCard';
 import SectionHeader from '@/components/ds/SectionHeader';
@@ -125,9 +127,9 @@ export default async function TourPage({ params }: { params: Params }) {
 
       <StickyBookingBar
         label={tour.shortTitle}
-        sublabel={`From £${tour.price} · Free cancellation`}
+        sublabel={`From ${currencySymbol(tour.currency)}${tour.price} · Free cancellation`}
         href={tour.affiliateUrl}
-        price={`£${tour.price}`}
+        price={`${currencySymbol(tour.currency)}${tour.price}`}
         ctaLabel="Book Now"
         external
       />
@@ -277,7 +279,7 @@ export default async function TourPage({ params }: { params: Params }) {
               <div className="rounded-card-lg border border-border bg-surface p-6 shadow-card">
                 <div className="mb-5 text-center">
                   <span className="text-xs uppercase tracking-wider text-on-surface-2">From</span>
-                  <div className="font-display text-5xl text-on-surface leading-none mt-1">£{tour.price}</div>
+                  <div className="font-display text-5xl text-on-surface leading-none mt-1"><LocalPrice amount={tour.price} currency={tour.currency} /></div>
                   <span className="block mt-1 text-xs text-on-surface-2">per person</span>
                 </div>
                 <TrackedGYGLink
@@ -312,7 +314,7 @@ export default async function TourPage({ params }: { params: Params }) {
                   <div className="flex justify-between"><dt className="text-on-surface-2">Duration</dt><dd className="font-medium text-on-surface">{tour.duration}</dd></div>
                   <div className="flex justify-between"><dt className="text-on-surface-2">Rating</dt><dd className="font-medium text-on-surface">{tour.rating.toFixed(1)}/5</dd></div>
                   <div className="flex justify-between"><dt className="text-on-surface-2">Reviews</dt><dd className="font-medium text-on-surface">{tour.reviewCount.toLocaleString()}</dd></div>
-                  <div className="flex justify-between"><dt className="text-on-surface-2">From</dt><dd className="font-medium text-on-surface">£{tour.price}</dd></div>
+                  <div className="flex justify-between"><dt className="text-on-surface-2">From</dt><dd className="font-medium text-on-surface"><LocalPrice amount={tour.price} currency={tour.currency} /></dd></div>
                 </dl>
               </div>
             </div>

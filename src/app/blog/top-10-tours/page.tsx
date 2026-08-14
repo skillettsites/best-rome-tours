@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { tours } from '@/data/tours';
 import { SITE_URL, SITE_CITY, SITE_NAME, GYG_CITY_URL, CONTENT_DATE } from '@/lib/constants';
+import { currencySymbol } from '@/lib/currency';
 import { breadcrumbSchema } from '@/lib/schema';
 import TrackedGYGLink from '@/components/TrackedGYGLink';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
@@ -33,9 +34,7 @@ export const metadata: Metadata = {
 };
 
 function symbol(currency?: string): string {
-  if (!currency || currency === 'GBP') return '£';
-  const map: Record<string, string> = { USD: '$', EUR: '€', AUD: 'A$', ISK: 'ISK ', MXN: 'MX$' };
-  return map[currency] || `${currency} `;
+  return currencySymbol(currency);
 }
 
 function reviews(n: number): string {

@@ -1,12 +1,31 @@
 'use client';
 
-import { useCurrency, convertGBP } from '@/components/CurrencyProvider';
+import { useCurrency } from '@/components/CurrencyProvider';
+import { SITE_CURRENCY } from '@/lib/constants';
+import { convertAmount, currencySymbol } from '@/lib/currency';
 
-// Renders a GBP base amount in the visitor's currency (approx). During SSR and before
-// the client resolves currency, it renders the exact GBP value so static HTML + SEO stay clean.
-export default function LocalPrice({ gbp, className }: { gbp: number; className?: string }) {
-  const { code, info, ready } = useCurrency();
-  if (!ready || code === 'GBP') return <span className={className}>&pound;{gbp}</span>;
-  const val = convertGBP(gbp, code, info.rate);
-  return <span className={className} title={`Approx, from £${gbp}. Exact price shown on GetYourGuide.`}>{'≈ '}{info.symbol}{val.toLocaleString('en-GB')}</span>;
+// Renders a catalogue amount in the visitor's currency (approx). Source currency is
+// tour.currency when provided, otherwise the site default. During SSR and before the
+// client resolves currency, it renders the source amount so static HTML stays stable.
+export default function LocalPrice({
+  amount,
+  currency,
+  className,
+}: {
+  amount: number;
+  currency?: string;
+  className?: string;
+}) {
+  const { code, info, ready, rates } = useCurrency();
+  const from = currency && currency.length > 0 ? currency : SITE_CURRENCY;
+  const fromSymbol = currencySymbol(from);
+  if (!ready || code === from) {
+    return <span className={className}>{fromSymbol}{amount}</span>;
+  }
+  const val = convertAmount(amount, from, code, rates);
+  return (
+    <span className={className} title={`Approx, from ${fromSymbol}${amount}. Exact price shown on GetYourGuide.`}>
+      {'≈ '}{info.symbol}{val.toLocaleString('en-GB')}
+    </span>
+  );
 }

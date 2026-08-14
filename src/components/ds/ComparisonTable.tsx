@@ -1,4 +1,5 @@
 import TrackedGYGLink from '@/components/TrackedGYGLink';
+import { currencySymbol } from '@/lib/currency';
 
 interface ComparisonTour {
   slug: string;
@@ -25,9 +26,7 @@ const labels: Record<Row, string> = {
 };
 
 function getSymbol(currency?: string): string {
-  if (!currency || currency === 'GBP') return '£';
-  const map: Record<string, string> = { USD: '$', EUR: '€', AUD: 'A$' };
-  return map[currency] || `${currency} `;
+  return currencySymbol(currency);
 }
 
 export default function ComparisonTable({

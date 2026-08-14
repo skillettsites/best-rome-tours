@@ -17,7 +17,9 @@ export const metadata: Metadata = {
 export default function AttractionsIndex() {
   const cards = attractions.map((a) => {
     const tours = a.tourSlugs.map((s) => getTourBySlug(s)).filter((t): t is NonNullable<typeof t> => Boolean(t));
-    return { a, top: tours[0], count: tours.length, from: Math.min(...tours.map((t) => t.price).filter(Boolean)) };
+    const priced = tours.filter((t) => t.price);
+    const cheapest = priced.reduce((min, t) => (t.price < min.price ? t : min), priced[0]);
+    return { a, top: tours[0], count: tours.length, from: cheapest?.price ?? tours[0].price, fromCurrency: cheapest?.currency ?? tours[0].currency };
   }).filter((c) => c.top);
 
   return (
@@ -44,7 +46,7 @@ export default function AttractionsIndex() {
               </div>
               <div className="p-5">
                 <h2 className="text-lg font-bold text-gray-900 group-hover:text-green-700 transition-colors">{a.name}</h2>
-                <p className="mt-1 text-sm text-gray-500">{count} tour{count === 1 ? '' : 's'} and ticket{count === 1 ? '' : 's'} &middot; from <LocalPrice gbp={from} /></p>
+                <p className="mt-1 text-sm text-gray-500">{count} tour{count === 1 ? '' : 's'} and ticket{count === 1 ? '' : 's'} &middot; from <LocalPrice amount={from} currency={fromCurrency} /></p>
               </div>
             </Link>
           ))}

@@ -172,7 +172,7 @@ export function buildMonthPage(slug: string) {
                       <td className="px-3 py-2.5 text-gray-700">{pick.bestFor}</td>
                       <td className="px-3 py-2.5 text-gray-700">{tour.duration}</td>
                       <td className="px-3 py-2.5 font-semibold text-gray-900">
-                        <LocalPrice gbp={tour.price} />
+                        <LocalPrice amount={tour.price} currency={tour.currency} />
                       </td>
                       <td className="px-3 py-2.5 text-gray-700 whitespace-nowrap">
                         {tour.rating} ({tour.reviewCount.toLocaleString('en-GB')})
@@ -296,7 +296,7 @@ export function buildMonthPage(slug: string) {
                       </span>{' '}
                       from {tour.reviewCount.toLocaleString('en-GB')} verified GetYourGuide reviews
                       {' '}&bull;{' '}
-                      from <LocalPrice gbp={tour.price} className="font-semibold text-gray-900" />
+                      from <LocalPrice amount={tour.price} currency={tour.currency} className="font-semibold text-gray-900" />
                       {' '}&bull;{' '}
                       {tour.duration}
                     </p>

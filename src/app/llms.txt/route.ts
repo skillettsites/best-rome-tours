@@ -1,4 +1,5 @@
 import { SITE_URL, SITE_NAME, SITE_CITY, SITE_DESCRIPTION, CONTENT_DATE, DATA_CHECKED } from '@/lib/constants';
+import { currencySymbol } from '@/lib/currency';
 import { tours } from '@/data/tours';
 import { guides } from '@/data/guides';
 import { attractions } from '@/data/attractions';
@@ -12,9 +13,7 @@ function line(items: string[]): string {
 }
 
 function symbol(currency?: string): string {
-  if (!currency || currency === 'GBP') return '£';
-  const map: Record<string, string> = { USD: '$', EUR: '€', AUD: 'A$', ISK: 'ISK ', MXN: 'MX$' };
-  return map[currency] || `${currency} `;
+  return currencySymbol(currency);
 }
 
 // One-line, citable verdicts for each decision guide, keyed by slug.

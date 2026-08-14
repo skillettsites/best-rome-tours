@@ -7,7 +7,7 @@ import { getTourBySlug } from '@/data/tours';
 import { categories } from '@/data/categories';
 import { articleSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { SITE_URL } from '@/lib/constants';
-import { currencySymbol } from '@/lib/currency';
+import { displayCopy } from '@/lib/currency';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import FAQ from '@/components/ui/FAQ';
 import TourCard from '@/components/ui/TourCard';
@@ -27,12 +27,12 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!guide) return {};
 
   return {
-    title: guide.metaTitle,
-    description: guide.metaDescription,
+    title: displayCopy(guide.metaTitle),
+    description: displayCopy(guide.metaDescription),
     alternates: { canonical: `${SITE_URL}/guides/${guide.slug}` },
     openGraph: {
-      title: guide.metaTitle,
-      description: guide.metaDescription,
+      title: displayCopy(guide.metaTitle),
+      description: displayCopy(guide.metaDescription),
       url: `${SITE_URL}/guides/${guide.slug}`,
       type: 'article',
     },
@@ -81,8 +81,8 @@ export default async function GuidePage({ params }: { params: Params }) {
 
         <article>
           <header className="mb-10">
-            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">{guide.title}</h1>
-            <p className="mt-4 text-lg text-gray-600">{guide.excerpt}</p>
+            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">{displayCopy(guide.title)}</h1>
+            <p className="mt-4 text-lg text-gray-600">{displayCopy(guide.excerpt)}</p>
             <time className="mt-3 block text-sm text-gray-500" dateTime={guide.updatedDate}>
               Updated: {new Date(guide.updatedDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
             </time>
@@ -110,7 +110,7 @@ export default async function GuidePage({ params }: { params: Params }) {
                   )}
                   <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-1">Best for {pick.useCase}</p>
                   <p className="font-bold text-gray-900">{pick.operator}</p>
-                  <p className="mt-1 text-sm text-gray-600 flex-1">{pick.verdict}</p>
+                  <p className="mt-1 text-sm text-gray-600 flex-1">{displayCopy(pick.verdict)}</p>
                   <span className="mt-3 inline-flex items-center gap-1 text-sm font-bold text-green-700">
                     Book now
                     <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
@@ -189,7 +189,7 @@ export default async function GuidePage({ params }: { params: Params }) {
                 <div key={i}>
                   <section id={section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>
                     <h2>{section.heading}</h2>
-                    <div dangerouslySetInnerHTML={{ __html: section.content }} />
+                    <div dangerouslySetInnerHTML={{ __html: displayCopy(section.content) }} />
                   </section>
                   {guide.comparison?.afterHeading === section.heading && comparisonTours.length > 0 && (
                     <div className="my-8 not-prose">
@@ -245,8 +245,8 @@ export default async function GuidePage({ params }: { params: Params }) {
                 <ul className="space-y-3">
                   {otherGuides.map(g => (
                     <li key={g.slug}>
-                      <Link href={`/guides/${g.slug}`} className="text-green-700 font-medium hover:underline">{g.title}</Link>
-                      <p className="text-sm text-gray-500 mt-0.5">{g.excerpt}</p>
+                      <Link href={`/guides/${g.slug}`} className="text-green-700 font-medium hover:underline">{displayCopy(g.title)}</Link>
+                      <p className="text-sm text-gray-500 mt-0.5">{displayCopy(g.excerpt)}</p>
                     </li>
                   ))}
                 </ul>
@@ -294,7 +294,7 @@ export default async function GuidePage({ params }: { params: Params }) {
           label={relatedTours[0].shortTitle}
           sublabel="Free cancellation · Instant confirmation"
           href={relatedTours[0].affiliateUrl}
-          price={`${currencySymbol(relatedTours[0].currency)}${relatedTours[0].price}`}
+          price={<LocalPrice amount={relatedTours[0].price} currency={relatedTours[0].currency} />}
           ctaLabel="Book Now"
           external
         />

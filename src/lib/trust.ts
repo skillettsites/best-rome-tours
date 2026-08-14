@@ -1,4 +1,5 @@
 import { tours } from '@/data/tours';
+import { SITE_CURRENCY } from '@/lib/constants';
 
 const totalReviews = tours.reduce((sum, t) => sum + t.reviewCount, 0);
 const avgRating = tours.length
@@ -15,7 +16,7 @@ export const trustStats = {
   totalReviews,
   freeCancellationPct: 95,
   minPrice,
-  minPriceCurrency: cheapest?.currency,
+  minPriceCurrency: cheapest?.currency ?? SITE_CURRENCY,
 };
 
 export const TOP_CONVERTER_BY_DESTINATION: Record<string, { slug: string; activityId: string; reason: string }> = {};

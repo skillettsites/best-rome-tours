@@ -197,15 +197,18 @@ export default function Header() {
             <Link href="/" className="flex items-center" onClick={() => setDrawerOpen(false)}>
               <span className="text-base font-bold text-[#1e3a5f]">Best Rome Tours</span>
             </Link>
-            <button
-              onClick={() => setDrawerOpen(false)}
-              className="p-2 text-gray-500 hover:text-gray-800 rounded-lg hover:bg-gray-100 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
-              aria-label="Close menu"
-            >
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
+            <div className="flex items-center gap-2">
+              <CurrencySelector />
+              <button
+                onClick={() => setDrawerOpen(false)}
+                className="p-2 text-gray-500 hover:text-gray-800 rounded-lg hover:bg-gray-100 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Close menu"
+              >
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
           </div>
 
           {/* Drawer CTA */}

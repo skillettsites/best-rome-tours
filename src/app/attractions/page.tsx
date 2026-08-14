@@ -15,12 +15,13 @@ export const metadata: Metadata = {
 };
 
 export default function AttractionsIndex() {
-  const cards = attractions.map((a) => {
-    const tours = a.tourSlugs.map((s) => getTourBySlug(s)).filter((t): t is NonNullable<typeof t> => Boolean(t));
-    const priced = tours.filter((t) => t.price);
-    const cheapest = priced.reduce((min, t) => (t.price < min.price ? t : min), priced[0]);
-    return { a, top: tours[0], count: tours.length, from: cheapest?.price ?? tours[0].price, fromCurrency: cheapest?.currency ?? tours[0].currency };
-  }).filter((c) => c.top);
+  const cards = attractions.flatMap((a) => {
+    const listed = a.tourSlugs.map((s) => getTourBySlug(s)).filter((t): t is NonNullable<typeof t> => Boolean(t));
+    const top = listed[0];
+    if (!top) return [];
+    const cheapest = listed.reduce((min, t) => (t.price < min.price ? t : min), top);
+    return [{ a, top, count: listed.length, cheapest }];
+  });
 
   return (
     <>
@@ -39,14 +40,14 @@ export default function AttractionsIndex() {
         </div>
 
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-          {cards.map(({ a, top, count, from, fromCurrency }) => (
+          {cards.map(({ a, top, count, cheapest }) => (
             <Link key={a.slug} href={`/attractions/${a.slug}`} className="group block rounded-2xl border border-gray-200 bg-white overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative aspect-[16/10] overflow-hidden bg-gray-100">
-                {top && <Image src={top.imageUrl} alt={a.name} fill className="object-cover group-hover:scale-[1.04] transition-transform duration-500" sizes="(max-width: 640px) 100vw, 400px" />}
+                <Image src={top.imageUrl} alt={a.name} fill className="object-cover group-hover:scale-[1.04] transition-transform duration-500" sizes="(max-width: 640px) 100vw, 400px" />
               </div>
               <div className="p-5">
                 <h2 className="text-lg font-bold text-gray-900 group-hover:text-green-700 transition-colors">{a.name}</h2>
-                <p className="mt-1 text-sm text-gray-500">{count} tour{count === 1 ? '' : 's'} and ticket{count === 1 ? '' : 's'} &middot; from <LocalPrice amount={from} currency={fromCurrency} /></p>
+                <p className="mt-1 text-sm text-gray-500">{count} tour{count === 1 ? '' : 's'} and ticket{count === 1 ? '' : 's'} &middot; from <LocalPrice amount={cheapest.price} currency={cheapest.currency} /></p>
               </div>
             </Link>
           ))}

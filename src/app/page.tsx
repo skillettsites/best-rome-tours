@@ -31,6 +31,7 @@ const decisionGuideSlugs = [
   'colosseum-arena-floor-vs-underground-tour',
   'how-to-skip-the-line-in-rome',
   'best-vatican-tickets',
+  'do-you-need-trevi-fountain-tickets',
   'is-a-vatican-museums-tour-worth-it',
   'vatican-vs-st-peters-basilica-which-tour',
   'rome-skip-the-line-combo-tour-worth-it',

@@ -15,7 +15,7 @@ import InlineTourCTA from '@/components/ui/InlineTourCTA';
 import StickyBookingBar from '@/components/ds/StickyBookingBar';
 import ComparisonTable from '@/components/ds/ComparisonTable';
 
-const DEDICATED_GUIDE_SLUGS = new Set(['best-vatican-tickets']);
+const DEDICATED_GUIDE_SLUGS = new Set(['best-vatican-tickets', 'do-you-need-trevi-fountain-tickets']);
 
 export function generateStaticParams() {
   return guides.filter((guide) => !DEDICATED_GUIDE_SLUGS.has(guide.slug)).map((guide) => ({ slug: guide.slug }));

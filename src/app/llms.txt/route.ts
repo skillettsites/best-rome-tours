@@ -32,6 +32,8 @@ const DECISION_VERDICTS: Record<string, string> = {
     `Verdict: go guided (from ${gbp(59)}) on a first visit to make the art mean something; a skip-the-line entry ticket (from ${gbp(28)}) is genuinely enough for confident museum-goers. Everyone should buy some form of fast-track.`,
   'how-to-skip-the-line-in-rome':
     `Verdict: pre-book timed tickets for everything. The Vatican skip-the-line (from ${gbp(28)}) and Colosseum timed combo (from ${gbp(42)}) save the most time; St Peter’s (from ${gbp(10)}) and Castel Sant’Angelo (from ${gbp(15)}) mop up the rest.`,
+  'do-you-need-trevi-fountain-tickets':
+    'Verdict: no. Trevi Fountain is free to view from the piazza. Paid GetYourGuide products are underground aqueduct tours and nearby walks, not a ticket just to see the fountain. Book the dedicated fountain and underground tour if you want a guide; book nothing if you only want the photograph.',
   'best-vatican-tickets':
     'Verdict: book the guided Museums, Sistine Chapel and Basilica tour for a Rome skip-the-line Vatican tour that covers all three sites. Book the Museums and Sistine entrance ticket if you only want the Chapel. Book the St Peter\'s dome tour if you only want the basilica. There is no separate Sistine Chapel ticket.',
   'which-rome-catacombs-tour-is-worth-it':

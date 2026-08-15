@@ -30,9 +30,9 @@ export const metadata: Metadata = {
 };
 
 export default function TreviFountainTicketsPage() {
-  const dedicated = TOP_THREE[0];
-  const smallGroup = TOP_THREE[1];
-  const district = TOP_THREE[2];
+  const underground = TOP_THREE[0];
+  const night = TOP_THREE[1];
+  const combo = TOP_THREE[2];
   const related = guides
     .filter((g) => g.slug !== SLUG)
     .filter((g) =>
@@ -112,11 +112,12 @@ export default function TreviFountainTicketsPage() {
               No. Trevi Fountain stands in a public piazza. You can walk up, look at it, and leave without buying
               anything. There is no ticket desk, no timed entry, and no skip-the-line lane for the fountain itself.
               Products that sell a &quot;Trevi Fountain entry ticket&quot; are selling a guided stop at a free monument,
-              or reserved entry to the archaeological rooms next door.
+              or entry to the archaeological rooms next door.
             </p>
             <p className="text-gray-700">
-              The crowd is the real cost. Mid-morning to late afternoon the basin is packed. Early morning and late
-              evening are calmer. If you only want the photograph, go at 7am and spend nothing.
+              The crowd is the real cost. Mid-morning to late afternoon the basin is packed. Early morning and after
+              dark are calmer, which is why the night walk exists. If you only want the photograph, go at 7am and spend
+              nothing.
             </p>
           </section>
 
@@ -127,16 +128,16 @@ export default function TreviFountainTicketsPage() {
                 <strong>Book nothing</strong> if you only want to see the fountain. It is free from the piazza.
               </li>
               <li>
-                <strong>Book the dedicated underground tour</strong> if you want a guide at the fountain plus Vicus
-                Caprarius, from <LocalPrice amount={dedicated.gbpFrom} currency="GBP" />.
+                <strong>Book the underground tour</strong> if you want the only real ticket next to Trevi: the aqueduct
+                and rooms under the district, from <LocalPrice amount={underground.gbpFrom} currency="GBP" />.
               </li>
               <li>
-                <strong>Book the small-group underground</strong> if you want a tighter group in the aqueduct rooms,
-                from <LocalPrice amount={smallGroup.gbpFrom} currency="GBP" />. That is not the cheapest option.
+                <strong>Book the sunset walk</strong> if you want Trevi lit up with the Pantheon, Piazza Navona and the
+                Spanish Steps on the same evening, from <LocalPrice amount={night.gbpFrom} currency="GBP" />.
               </li>
               <li>
-                <strong>Book the district tour with gelato</strong> if you want the extra, from{' '}
-                <LocalPrice amount={district.gbpFrom} currency="GBP" />.
+                <strong>Book the combo walk</strong> if it is your first visit and you want the historic centre explained
+                in daylight, from <LocalPrice amount={combo.gbpFrom} currency="GBP" />.
               </li>
             </ul>
           </section>
@@ -150,10 +151,9 @@ export default function TreviFountainTicketsPage() {
               underneath the statues themselves.
             </p>
             <p className="text-gray-700">
-              If you have already done the piazza and want one paid Trevi product, the dedicated underground tour is
-              the one. The small-group and district products visit the same archaeological site. Some district options
-              include official inner-perimeter access. That is an optional add-on, not a requirement to see the fountain
-              from the square. The wider walking-tour picture is in the{' '}
+              If you have already done the piazza and want one paid Trevi product, this is the one. If you have not seen
+              the historic centre yet, the combo walk or the night walk will teach you more for the time. The wider
+              walking-tour picture is in the{' '}
               <Link href="/guides/best-walking-tours-rome-2026" className="font-semibold text-green-700 underline">
                 best walking tours in Rome
               </Link>{' '}
@@ -162,38 +162,39 @@ export default function TreviFountainTicketsPage() {
           </section>
 
           <section className="mb-12">
-            <h2 className="mb-4 text-2xl font-bold text-gray-900">Small group or district extra?</h2>
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">Night tour or daytime combo?</h2>
             <p className="mb-4 text-gray-700">
-              The small-group underground is the same Vicus Caprarius site in a tighter group. Live from-price is
-              higher than the dedicated tour, so book it for the group size, not to save money.
+              The sunset walk is the one to book if you care about the light. Trevi, the Spanish Steps and Piazza Navona
+              are all outdoor and look better after the stone is lit. The Pantheon is usually an exterior stop on evening
+              departures because the interior has closed.
             </p>
             <p className="text-gray-700">
-              The district tour is the extra: a slightly longer underground visit with an optional gelato. It is the
-              highest-rated of the well-reviewed Trevi products we compared. Most options include free cancellation up
-              to 24 hours before.
+              The daytime combo is the cheaper first-visit pick and the one that can go inside the Pantheon on group
+              options. Neither walk includes the underground aqueducts. Most options include free cancellation up to 24
+              hours before.
             </p>
           </section>
 
           <section className="mb-12 rounded-xl border-2 border-green-200 bg-gradient-to-br from-green-50 to-emerald-50 p-5 sm:p-6">
             <p className="text-xs font-semibold uppercase tracking-wide text-green-700">Top pick if you book one thing</p>
-            <p className="mt-1 font-bold text-gray-900">{dedicated.name}</p>
+            <p className="mt-1 font-bold text-gray-900">{underground.name}</p>
             <p className="mt-2 text-sm text-gray-700">
-              The dedicated Trevi underground tour: aqueducts next to the fountain, {dedicated.duration}, rated{' '}
-              {dedicated.rating.toFixed(1)} from {dedicated.reviewCount.toLocaleString('en-GB')} reviews. From{' '}
-              <LocalPrice amount={dedicated.gbpFrom} currency="GBP" />. Book the{' '}
+              The only real Trevi ticket: underground aqueducts next to the fountain, {underground.duration}, rated{' '}
+              {underground.rating.toFixed(1)} from {underground.reviewCount.toLocaleString('en-GB')} reviews. From{' '}
+              <LocalPrice amount={underground.gbpFrom} currency="GBP" />. Book the{' '}
               <TrackedGYGLink
-                href={district.href}
-                tourName={district.shortName}
+                href={combo.href}
+                tourName={combo.shortName}
                 section="trevi-which-ticket-bottom-alt"
                 className="font-semibold text-green-700 underline"
               >
-                {district.shortName}
+                {combo.shortName}
               </TrackedGYGLink>{' '}
-              instead if you want the gelato extra.
+              instead if you want the historic centre explained, not the rooms under the square.
             </p>
             <TrackedGYGLink
-              href={dedicated.href}
-              tourName={dedicated.shortName}
+              href={underground.href}
+              tourName={underground.shortName}
               section="trevi-which-ticket-bottom-cta"
               className="mt-4 inline-flex items-center gap-2 rounded-lg bg-green-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-green-500"
             >

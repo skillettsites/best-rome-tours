@@ -187,7 +187,7 @@ export default function BestVaticanTicketsPage() {
             <p className="text-xs font-semibold uppercase tracking-wide text-green-700">Top pick</p>
             <p className="mt-1 font-bold text-gray-900">{top.name}</p>
             <p className="mt-2 text-sm text-gray-700">
-              Skip-the-ticket-line Museums and Sistine Chapel entry, {top.duration}, rated {top.rating.toFixed(1)} from{' '}
+              Guided skip-the-line Museums, Sistine Chapel and Basilica tour, {top.duration}, rated {top.rating.toFixed(1)} from{' '}
               {top.reviewCount.toLocaleString('en-GB')} reviews. From <LocalPrice amount={top.gbpFrom} currency="GBP" />
               . Book the{' '}
               <TrackedGYGLink

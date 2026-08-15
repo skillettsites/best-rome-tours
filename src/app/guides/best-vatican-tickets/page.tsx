@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function BestVaticanTicketsPage() {
   const top = TOP_THREE[0];
-  const guided = TOP_THREE[1];
+  const ticket = TOP_THREE[1];
   const related = guides
     .filter((g) => g.slug !== SLUG)
     .filter((g) =>
@@ -109,13 +109,13 @@ export default function BestVaticanTicketsPage() {
             <h2 className="mb-4 text-2xl font-bold text-gray-900">Which one should you book?</h2>
             <ul className="list-disc space-y-3 pl-5 text-gray-700">
               <li>
+                <strong>Book the guided Museums, Sistine and Basilica tour</strong> if it is your first visit and you
+                want the art explained plus the internal route into St Peter&apos;s. That is the all-rounder.
+              </li>
+              <li>
                 <strong>Book the Museums and Sistine ticket</strong> if you are happy going at your own pace and do not
                 need St Peter&apos;s on the same booking. It is the cheapest useful Vatican ticket and the one with the
                 most reviews.
-              </li>
-              <li>
-                <strong>Book the guided Museums, Sistine and Basilica tour</strong> if it is your first visit and you
-                want the art explained plus the internal route into St Peter&apos;s. That is the all-rounder.
               </li>
               <li>
                 <strong>Book the St Peter&apos;s dome and underground tour</strong> if the Basilica is the point, or you
@@ -151,9 +151,9 @@ export default function BestVaticanTicketsPage() {
               Sistine Chapel, so a good guide explains Michelangelo before you enter.
             </p>
             <p className="text-gray-700">
-              The entrance ticket from <LocalPrice amount={top.gbpFrom} currency="GBP" /> is genuinely enough if you
+              The entrance ticket from <LocalPrice amount={ticket.gbpFrom} currency="GBP" /> is genuinely enough if you
               already know the collection or want to move at your own speed. The guided combo from{' '}
-              <LocalPrice amount={guided.gbpFrom} currency="GBP" /> is the one to book on a first visit. That is the
+              <LocalPrice amount={top.gbpFrom} currency="GBP" /> is the one to book on a first visit. That is the
               same verdict as{' '}
               <Link href="/blog/is-a-vatican-museums-tour-worth-it" className="font-semibold text-green-700 underline">
                 is a Vatican Museums tour worth it
@@ -191,14 +191,14 @@ export default function BestVaticanTicketsPage() {
               {top.reviewCount.toLocaleString('en-GB')} reviews. From <LocalPrice amount={top.gbpFrom} currency="GBP" />
               . Book the{' '}
               <TrackedGYGLink
-                href={guided.href}
-                tourName={guided.shortName}
+                href={ticket.href}
+                tourName={ticket.shortName}
                 section="vatican-which-ticket-bottom-alt"
                 className="font-semibold text-green-700 underline"
               >
-                {guided.shortName}
+                {ticket.shortName}
               </TrackedGYGLink>{' '}
-              instead if you want St Peter&apos;s on the same ticket.
+              instead if you only want the Museums and Sistine Chapel.
             </p>
             <TrackedGYGLink
               href={top.href}
@@ -206,7 +206,7 @@ export default function BestVaticanTicketsPage() {
               section="vatican-which-ticket-bottom-cta"
               className="mt-4 inline-flex items-center gap-2 rounded-lg bg-green-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-green-500"
             >
-              Book the Museums & Sistine ticket
+              Book the guided Vatican combo
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>

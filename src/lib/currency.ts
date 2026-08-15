@@ -71,3 +71,46 @@ export function displayCopy(text: string): string {
     .replace(/&pound;(\d+(?:,\d{3})*(?:\.\d+)?)/g, (_, raw) => formatPrice(Number(String(raw).replace(/,/g, '')), 'GBP'))
     .replace(/£(\d+(?:,\d{3})*(?:\.\d+)?)/g, (_, raw) => formatPrice(Number(String(raw).replace(/,/g, '')), 'GBP'));
 }
+
+export type DisplayTourCard = {
+  slug: string;
+  shortTitle: string;
+  excerpt: string;
+  price: number;
+  currency?: string;
+  duration: string;
+  rating: number;
+  reviewCount: number;
+  imageUrl: string;
+  imageAlt: string;
+  affiliateUrl: string;
+  destination?: string;
+};
+
+// Convert leftover £ in FAQ copy at display time. Stored data is unchanged.
+export function displayFaqs<T extends { question: string; answer: string }>(faqs: T[]): T[] {
+  return faqs.map((faq) => ({
+    ...faq,
+    question: displayCopy(faq.question),
+    answer: displayCopy(faq.answer),
+  }));
+}
+
+// Slim tour for client cards: convert leftover £ in titles/excerpts and drop
+// answerCapsule / faqs so stored £ prose is not serialized into the page.
+export function displayTourCard(tour: DisplayTourCard): DisplayTourCard {
+  return {
+    slug: tour.slug,
+    shortTitle: displayCopy(tour.shortTitle),
+    excerpt: displayCopy(tour.excerpt),
+    price: tour.price,
+    currency: tour.currency,
+    duration: tour.duration,
+    rating: tour.rating,
+    reviewCount: tour.reviewCount,
+    imageUrl: tour.imageUrl,
+    imageAlt: tour.imageAlt,
+    affiliateUrl: tour.affiliateUrl,
+    destination: tour.destination,
+  };
+}

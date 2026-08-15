@@ -67,12 +67,12 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!category) return {};
 
   return {
-    title: category.metaTitle,
-    description: category.metaDescription,
+    title: displayCopy(category.metaTitle),
+    description: displayCopy(category.metaDescription),
     alternates: { canonical: `${SITE_URL}/category/${category.slug}` },
     openGraph: {
-      title: category.metaTitle,
-      description: category.metaDescription,
+      title: displayCopy(category.metaTitle),
+      description: displayCopy(category.metaDescription),
       url: `${SITE_URL}/category/${category.slug}`,
     },
   };
@@ -114,8 +114,8 @@ export default async function CategoryPage({ params }: { params: Params }) {
 
         <div className="mb-8">
           <span className="text-4xl mb-4 block">{category.icon}</span>
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">{category.title}</h1>
-          <p className="mt-3 text-lg text-gray-600 max-w-3xl">{category.description}</p>
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">{displayCopy(category.title)}</h1>
+          <p className="mt-3 text-lg text-gray-600 max-w-3xl">{displayCopy(category.description)}</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

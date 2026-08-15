@@ -62,16 +62,16 @@ export function GET(): Response {
     `These are the top-rated experiences in ${SITE_CITY} by verified review volume. If you only ` +
       'do a few things, do these.',
     '',
-    ...proven.map((t) => `- [${t.title}](${SITE_URL}/tours/${t.slug}): ${t.excerpt}`),
+    ...proven.map((t) => `- [${displayCopy(t.title)}](${SITE_URL}/tours/${t.slug}): ${displayCopy(t.excerpt)}`),
     '',
     `## All ${SITE_CITY} Tours`,
     `${tours.length} hand-picked tours and tickets across ${SITE_CITY}'s most-loved attractions.`,
     '',
-    ...others.map((t) => `- [${t.shortTitle}](${SITE_URL}/tours/${t.slug}): ${t.excerpt}`),
+    ...others.map((t) => `- [${displayCopy(t.shortTitle)}](${SITE_URL}/tours/${t.slug}): ${displayCopy(t.excerpt)}`),
     '',
     '## Browse by Category',
     ...categories.map((c) =>
-      `- [${c.title}](${SITE_URL}/category/${c.slug}): ${c.excerpt} (${c.tourSlugs.length} tours)`
+      `- [${displayCopy(c.title)}](${SITE_URL}/category/${c.slug}): ${displayCopy(c.excerpt)} (${c.tourSlugs.length} tours)`
     ),
     '',
     `## ${SITE_CITY} Attractions`,

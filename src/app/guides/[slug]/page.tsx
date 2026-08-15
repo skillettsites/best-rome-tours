@@ -15,8 +15,10 @@ import InlineTourCTA from '@/components/ui/InlineTourCTA';
 import StickyBookingBar from '@/components/ds/StickyBookingBar';
 import ComparisonTable from '@/components/ds/ComparisonTable';
 
+const DEDICATED_GUIDE_SLUGS = new Set(['best-vatican-tickets']);
+
 export function generateStaticParams() {
-  return guides.map((guide) => ({ slug: guide.slug }));
+  return guides.filter((guide) => !DEDICATED_GUIDE_SLUGS.has(guide.slug)).map((guide) => ({ slug: guide.slug }));
 }
 
 type Params = Promise<{ slug: string }>;

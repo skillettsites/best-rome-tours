@@ -67,8 +67,8 @@ export default function TopThreeCards() {
                   <dd className="font-semibold text-gray-900">{ticket.includesUnderground ? 'Yes' : 'No'}</dd>
                 </div>
                 <div>
-                  <dt className="text-xs uppercase tracking-wide text-gray-500">Night tour</dt>
-                  <dd className="font-semibold text-gray-900">{ticket.isNight ? 'Yes' : 'No'}</dd>
+                  <dt className="text-xs uppercase tracking-wide text-gray-500">Gelato</dt>
+                  <dd className="font-semibold text-gray-900">{ticket.includesGelato ? 'Yes' : 'No'}</dd>
                 </div>
                 <div>
                   <dt className="text-xs uppercase tracking-wide text-gray-500">When</dt>

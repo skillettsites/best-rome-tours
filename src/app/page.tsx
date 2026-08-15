@@ -4,6 +4,7 @@ import LocalPrice from '@/components/LocalPrice';
 import { tours } from '@/data/tours';
 import { categories } from '@/data/categories';
 import { blogPosts } from '@/data/blog-posts';
+import { guides } from '@/data/guides';
 import { SITE_CITY, GYG_PARTNER_ID, GYG_LOCATION_ID, GYG_CITY_URL, SITE_CURRENCY } from '@/lib/constants';
 import { trustStats } from '@/lib/trust';
 import { displayCopy } from '@/lib/currency';
@@ -29,14 +30,25 @@ const decisionGuideSlugs = [
   'best-colosseum-ticket-which-tour-to-book',
   'colosseum-arena-floor-vs-underground-tour',
   'how-to-skip-the-line-in-rome',
+  'best-vatican-tickets',
   'is-a-vatican-museums-tour-worth-it',
   'vatican-vs-st-peters-basilica-which-tour',
   'rome-skip-the-line-combo-tour-worth-it',
   'which-rome-catacombs-tour-is-worth-it',
 ];
 const decisionGuides = decisionGuideSlugs
-  .map((slug) => blogPosts.find((p) => p.slug === slug))
-  .filter((p): p is NonNullable<typeof p> => p !== undefined);
+  .map((slug) => {
+    const guide = guides.find((g) => g.slug === slug);
+    if (guide) {
+      return { slug: guide.slug, title: guide.title, excerpt: guide.excerpt, href: `/guides/${guide.slug}` };
+    }
+    const post = blogPosts.find((p) => p.slug === slug);
+    if (post) {
+      return { slug: post.slug, title: post.title, excerpt: post.excerpt, href: `/blog/${post.slug}` };
+    }
+    return undefined;
+  })
+  .filter((p): p is { slug: string; title: string; excerpt: string; href: string } => p !== undefined);
 
 const testimonials = [
   { quote: `Booking ahead through the site was effortless. We skipped the long queue and walked straight in. Easily the highlight of our trip to ${SITE_CITY}.`, author: 'Sarah M.', location: 'United States', rating: 5 },
@@ -189,7 +201,7 @@ export default function HomePage() {
               {decisionGuides.map((post, i) => (
                 <RevealOnScroll key={post.slug} delay={(i % 3) * 0.08}>
                   <Link
-                    href={`/blog/${post.slug}`}
+                    href={post.href}
                     className="group flex h-full flex-col rounded-card-lg border border-border bg-surface p-6 transition-colors hover:border-primary"
                   >
                     <h3 className="text-lg font-semibold text-on-surface group-hover:text-primary transition-colors">

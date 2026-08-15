@@ -64,7 +64,16 @@ export default function TrackedGYGLink({
       }
     } catch {}
     try {
-      navigator.sendBeacon('/api/track-click', payload);
+      const blob = new Blob([payload], { type: 'application/json' });
+      const queued = navigator.sendBeacon('/api/track-click', blob);
+      if (!queued) {
+        fetch('/api/track-click', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: payload,
+          keepalive: true,
+        }).catch(() => {});
+      }
     } catch {
       fetch('/api/track-click', {
         method: 'POST',
